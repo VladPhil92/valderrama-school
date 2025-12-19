@@ -41,7 +41,7 @@ export default function Navigation({ locale }: { locale: string }) {
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center">
             <Image
-              src="/images/LOGO VALDERRAMA INTERNATIONAL SCHOOL.png"
+              src="/images/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.png"
               alt="Valderrama International School"
               width={140}
               height={45}

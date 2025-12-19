@@ -28,7 +28,7 @@ export default function Footer({ locale }: { locale: string }) {
             <Link href={`/${locale}`} className="inline-block mb-6">
               <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center p-2">
                 <Image
-                  src="/images/LOGO VALDERRAMA INTERNATIONAL SCHOOL.png"
+                  src="/images/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.png"
                   alt="Valderrama International School"
                   width={70}
                   height={70}

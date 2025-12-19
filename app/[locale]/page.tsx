@@ -29,7 +29,7 @@ export default async function HomePage({
             {/* Centered Logo */}
             <div className="mb-8">
               <Image
-                src="/images/LOGO VALDERRAMA INTERNATIONAL SCHOOL.png"
+                src="/images/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.png"
                 alt="Valderrama International School"
                 width={280}
                 height={140}
@@ -101,7 +101,7 @@ export default async function HomePage({
             </div>
             <div className="relative h-80">
               <Image
-                src="/images/Fachada Colegio.png"
+                src="/images/Fachada-Colegio.png"
                 alt="Valderrama International School"
                 fill
                 className="object-cover"
@@ -253,31 +253,31 @@ export default async function HomePage({
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             <div className="group">
               <div className="relative h-56 overflow-hidden mb-4">
-                <Image src="/images/Recepción.png" alt="Recepción" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src="/images/Recepcion.png" alt="Recepción" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-gray-600 group-hover:text-[#C41E3A] transition-colors">{t('facilities.reception')}</h3>
             </div>
             <div className="group">
               <div className="relative h-56 overflow-hidden mb-4">
-                <Image src="/images/Patio de Juegos 1.png" alt="Patio de Juegos" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src="/images/Patio-de-Juegos-1.png" alt="Patio de Juegos" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-gray-600 group-hover:text-[#C41E3A] transition-colors">{t('facilities.playground')}</h3>
             </div>
             <div className="group">
               <div className="relative h-56 overflow-hidden mb-4">
-                <Image src="/images/Salón de Música.png" alt="Salón de Música" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src="/images/Salon-de-Musica.png" alt="Salón de Música" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-gray-600 group-hover:text-[#C41E3A] transition-colors">{t('facilities.music')}</h3>
             </div>
             <div className="group">
               <div className="relative h-56 overflow-hidden mb-4">
-                <Image src="/images/Salón de Danza.png" alt="Salón de Danza" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src="/images/Salon-de-Danza.png" alt="Salón de Danza" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-gray-600 group-hover:text-[#C41E3A] transition-colors">{t('facilities.dance')}</h3>
             </div>
             <div className="group">
               <div className="relative h-56 overflow-hidden mb-4">
-                <Image src="/images/Salón de Tutorías.png" alt="Salón de Tutorías" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src="/images/Salon-de-Tutorias.png" alt="Salón de Tutorías" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-gray-600 group-hover:text-[#C41E3A] transition-colors">{t('facilities.tutoring')}</h3>
             </div>

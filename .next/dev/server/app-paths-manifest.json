@@ -1,0 +1,11 @@
+{
+  "/[locale]/about/page": "app/[locale]/about/page.js",
+  "/[locale]/admissions/page": "app/[locale]/admissions/page.js",
+  "/[locale]/community/page": "app/[locale]/community/page.js",
+  "/[locale]/contact/page": "app/[locale]/contact/page.js",
+  "/[locale]/learning-center/page": "app/[locale]/learning-center/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/programs/page": "app/[locale]/programs/page.js",
+  "/[locale]/student-life/page": "app/[locale]/student-life/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
+}
