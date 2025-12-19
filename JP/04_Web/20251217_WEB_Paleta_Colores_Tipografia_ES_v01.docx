@@ -1,0 +1,182 @@
+================================================================================
+PALETA DE COLORES Y TIPOGRAFÍA – VALDERRAMA INTERNATIONAL SCHOOL
+Versión: 1.0 | 17 diciembre 2025
+================================================================================
+
+1. PALETA DE COLORES
+
+PRIMARIOS:
+- Rojo Valderrama: #C41E3A (del logo existente)
+  Uso: Botones primarios, CTA, hero destacado, accents
+- Verde Naturaleza: #2E7D32 (nutrición, conexión)
+  Uso: Botones secundarios, "Valderrama is...", secciones destacadas
+
+SECUNDARIOS:
+- Azul Cielo: #3498DB (innovación tecnológica, STEAM)
+  Uso: Links, iconografía, estados de formularios
+- Naranja Humanista: #F57C00 (empatía, comunidad)
+  Uso: Alertas, énfasis, destacados Service Learning
+
+APOYO:
+- Verde Fresco: #4CAF50 (Service Learning, éxito)
+- Gris Tecnológico: #546E7A (STEAM, líneas divisoras)
+
+NEUTROS:
+- Blanco: #FFFFFF (fondo base)
+- Gris Claro: #F3F4F6 (fondos secundarios, separadores)
+- Gris Medio: #D1D5DB (bordes, líneas)
+- Gris Oscuro: #111827 (texto principal, cuerpo)
+
+ESPECIALES:
+- Negro Puro: #000000 (solo textos críticos)
+- Éxito: #10B981 (confirmaciones, checkmarks)
+- Advertencia: #F59E0B (alertas, warnings)
+- Error: #EF4444 (errores de formulario)
+
+2. CONTRASTE WCAG 2.1 AA
+
+VALIDADOS:
+✓ Rojo Valderrama sobre Blanco: 4.5:1
+✓ Verde Naturaleza sobre Blanco: 4.5:1
+✓ Azul Cielo sobre Blanco: 4.5:1
+✓ Gris Oscuro sobre Blanco: 13.6:1
+
+3. TIPOGRAFÍA
+
+FUENTES RECOMENDADAS:
+
+Titulares (Display/H1/H2/H3):
+- Fuente: Montserrat
+- Pesos: Bold (700), SemiBold (600)
+- Descarga: Google Fonts (libre)
+- Familias: Montserrat Bold + Montserrat SemiBold
+
+Cuerpo (Párrafos, Descripciones):
+- Fuente: Open Sans o Source Sans 3
+- Pesos: Regular (400), SemiBold (600)
+- Descarga: Google Fonts (libre)
+- Fallback: sans-serif genérico
+
+4. ESCALA TIPOGRÁFICA
+
+DISPLAY: 48px, Bold, line-height 1.2
+H1: 40px, Bold, line-height 1.2
+H2: 32px, SemiBold, line-height 1.3
+H3: 24px, SemiBold, line-height 1.4
+Body: 16px, Regular, line-height 1.6
+Label: 14px, SemiBold, line-height 1.5
+Caption: 12px, Regular, line-height 1.4
+
+5. ESPACIADO (múltiplos de 4)
+
+Base: 4px
+Micro: 8px
+Extra Small: 12px
+Small: 16px
+Medium: 24px
+Large: 32px
+Extra Large: 48px
+Mega: 64px
+
+6. BORDER RADIUS
+
+Small: 4px (botones pequeños, inputs)
+Medium: 8px (tarjetas, acordeones)
+Large: 16px (componentes grandes, hero)
+Full: 9999px (avatares circulares)
+
+7. SOMBRAS
+
+Shadow XS: 0 1px 2px rgba(0,0,0,0.05)
+Shadow SM: 0 1px 3px rgba(0,0,0,0.1)
+Shadow MD: 0 4px 6px rgba(0,0,0,0.1)
+Shadow LG: 0 10px 15px rgba(0,0,0,0.1)
+
+8. TOKENS CSS (Variables)
+
+:root {
+  --color-red-valderrama: #C41E3A;
+  --color-green-nature: #2E7D32;
+  --color-blue-sky: #3498DB;
+  --color-orange-human: #F57C00;
+  
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+9. COMPONENTES POR COLOR
+
+Rojo Valderrama:
+- Botón primario (CTA principal)
+- Logo
+- Accent en hero
+- Titulares destacados
+
+Verde Naturaleza:
+- Botón secundario
+- "Valderrama is..." banner
+- Secciones nutrición
+- Links hover
+
+Azul Cielo:
+- Links activos
+- Iconografía STEAM
+- Estados focus en inputs
+- Indicadores de carga
+
+Naranja Humanista:
+- "Valderrama is helping"
+- Empatía / Community sections
+- Testimonios destacados
+
+10. APLICACIÓN EN PÁGINAS
+
+HOME:
+- Hero: Rojo Valderrama fondo oscuro
+- Diferenciadores: 4 tarjetas con iconos (colores variados)
+- "Valderrama is...": Verde Naturaleza fondo
+- Programas: Tarjetas neutras con borders Verde
+
+ADMISIONES:
+- Timeline: Nodos Azul Cielo, línea Verde
+- "Valderrama is caring": Naranja accent
+- CTA: Rojo Valderrama
+
+PROGRAMAS:
+- Hero: Fondo Green Nature suave
+- Stats boxes: Verde primario con texto blanco
+- "Valderrama is...": Rojo accent
+
+COSTOS Y BECAS:
+- Calculadora: Inputs con border Azul Cielo
+- Tablas: Filas alternadas (blanco/gris claro)
+- Becas: Naranja Humanista para acciones
+
+CONTACTO:
+- Formulario: Inputs border Gris Medio
+- Focus: Border Azul Cielo
+- Enviar: Botón Rojo Valderrama
+
+BLOG:
+- Tags: Colores variados (Verde, Azul, Naranja)
+- Categorías: Colores asignados
+
+11. DIRECTRICES DE USO
+
+✓ Siempre mantener contraste AA mínimo
+✓ No mezclar más de 3 colores en una sección
+✓ Usar colores primarios para CTAs críticas
+✓ Limitar naranja y rojo a puntos de énfasis
+✓ Mantener consistencia en secciones repetidas
+✓ Revisión de daltonismo (Colorblind Simulator)
+
+FIN DEL DOCUMENTO

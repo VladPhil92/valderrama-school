@@ -1,0 +1,317 @@
+================================================================================
+GUÍA PARA RECLASIFICAR DOCUMENTOS EXISTENTES
+Valderrama International School
+================================================================================
+
+1. RESUMEN DE ÁREAS (10 carpetas + Plantillas)
+================================================================================
+
+GOV  → 01_Gobierno_Institucional_y_Estrategia
+     Contenido: PEI, políticas, protocolos, plan estratégico, comités
+
+LEG  → 02_Legal_y_Regulatorio
+     Contenido: Licencias, contratos, seguros, SG-SST, pólizas
+
+ACD  → 03_Académico_y_Currículo
+     Contenido: Mallas, unidades, lesson plans, rúbricas, calendarios
+
+ADM  → 04_Admisiones_y_Mercadeo
+     Contenido: Proceso admisiones, formularios, campañas, branding, logos
+
+FIN  → 05_Finanzas_y_Contabilidad
+     Contenido: Presupuestos, tarifas, flujo de caja, compras, becas
+
+RRHH → 06_Recursos_Humanos
+     Contenido: Organigrama, perfiles de cargo, contratos, formación
+
+OPS  → 07_Operaciones_y_Logística
+     Contenido: Infraestructura, inventarios, mantenimientos, protocolos
+
+TEC  → 08_Tecnología_y_Datos
+     Contenido: Plataformas, licencias, accesos, KPIs, seguridad
+
+COM  → 09_Comunidad_y_Bienestar
+     Contenido: Convivencia, orientación, eventos, escuela de padres
+
+PROY → 10_Proyectos_Especiales_y_Expansión
+     Contenido: Nuevos programas, alianzas, innovación
+
+99_  → 99_Plantillas_y_Recursos_Comunes
+     Contenido: Plantillas reutilizables, glosarios, convenciones
+
+================================================================================
+2. CÓMO DECIDIR ÁREA (árbol de decisión)
+================================================================================
+
+¿Es una norma, política, protocolo o PEI?
+→ SÍ: GOV (Gobierno)
+→ NO: Siguiente pregunta
+
+¿Es un permiso, contrato, seguro, licencia o evidencia legal?
+→ SÍ: LEG (Legal)
+→ NO: Siguiente pregunta
+
+¿Es curricular: mallas curriculares, unidades, evaluación, rúbricas?
+→ SÍ: ACD (Académico)
+→ NO: Siguiente pregunta
+
+¿Es sobre marketing, admisiones, formularios, piezas gráficas, branding?
+→ SÍ: ADM (Admisiones)
+→ NO: Siguiente pregunta
+
+¿Es sobre dinero, facturación, presupuestos, tarifas, contabilidad?
+→ SÍ: FIN (Finanzas)
+→ NO: Siguiente pregunta
+
+¿Es sobre personal, perfiles de cargo, contratación, formación docente?
+→ SÍ: RRHH (Recursos Humanos)
+→ NO: Siguiente pregunta
+
+¿Es edificio, eventos, transporte, seguridad, limpieza, mantenimiento?
+→ SÍ: OPS (Operaciones)
+→ NO: Siguiente pregunta
+
+¿Es software, datos, sistemas, KPIs, análisis, seguridad informática?
+→ SÍ: TEC (Tecnología)
+→ NO: Siguiente pregunta
+
+¿Es sobre convivencia, familia, eventos sociales, bienestar?
+→ SÍ: COM (Comunidad)
+→ NO: Siguiente pregunta
+
+¿Es futuro, piloto, alianza nueva, proyecto experimental?
+→ SÍ: PROY (Proyectos Especiales)
+→ NO: Siguiente pregunta
+
+¿Es un modelo o plantilla para usar muchas veces?
+→ SÍ: 99_ (Plantillas)
+
+================================================================================
+3. NOMENCLATURA ESTÁNDAR
+================================================================================
+
+Formato:
+  YYYYMMDD_Area_TipoDocumento_Tema_Detalle_Idioma_Estado_v##.ext
+
+Campos:
+  YYYYMMDD   = Fecha de creación (ej: 20251216)
+  Area       = GOV, LEG, ACD, ADM, FIN, RRHH, OPS, TEC, COM, PROY
+  Tipo       = Política, Protocolo, Plan, Malla, Unit, Rúbrica, Acta, Contrato, etc.
+  Tema       = Tema específico (ej: Admisiones, Convivencia, Math)
+  Detalle    = Si necesario, subtema o identificador (ej: G1, PreK, Básica)
+  Idioma     = ES, EN, BI (bilingüe)
+  Estado     = DRAFT, REVIEW, APPROVED, FINAL
+  v##        = v01, v02, v03, etc.
+  ext        = .docx, .pdf, .xlsx, .pptx
+
+Ejemplos válidos:
+  20251216_GOV_PEI_Documento_Maestro_ES_DRAFT_v01.docx
+  20251216_ACD_Malla_Primaria_Math_G3_EN_DRAFT_v01.xlsx
+  20251216_FIN_Presupuesto_2026_ES_DRAFT_v01.xlsx
+  20251216_RRHH_PerfilDocente_Primaria_EN_APPROVED_v01.docx
+  20251216_ADM_Formulario_Inscripcion_ES_APPROVED_v01.pdf
+
+Excepciones (plantillas y recursos):
+  TPL_LessonPlan_BI_v01.docx
+  Logo_Principal_Color.png
+  Branding_PaletaColores.ai
+
+================================================================================
+4. ESTADOS DE DOCUMENTOS
+================================================================================
+
+DRAFT
+  → Usa mientras construyes o editas
+  → Incrementa v## por cada cambio mayor
+  → Versión editable
+
+REVIEW
+  → El documento está en revisión formal
+  → Se congela para cambios mayores hasta recibir comentarios
+  → Preferir enviar como PDF
+
+APPROVED
+  → Aprobado por autoridad correspondiente
+  → No cambia contenido sustancial
+  → Listo para comunicar
+
+FINAL
+  → Versión publicada (sitio web, comunicados oficiales)
+  → Solo cambios por erratas menores
+
+================================================================================
+5. CLASIFICACIÓN DE TUS DOCUMENTOS ACTUALES
+================================================================================
+
+DOCUMENTO ACTUAL:
+  Colegio Internacional Valderrama (CIV).docx
+
+ANÁLISIS:
+  - Describe el proyecto inicial del colegio
+  - Contiene visión, propósitos, identidad
+  - Es fundacional
+
+RECOMENDACIÓN:
+  → Área: GOV (Gobierno Institucional)
+  → Tipo: Documento_Marco / Propuesta_Institucional
+  → Nombre: 20251216_GOV_Documento_Inicial_VisionInstitucional_ES_DRAFT_v01.docx
+  → Subcarpeta: 02_PEI_y_Documentos_Macro
+  → Acción: Revisar, mejorar título y estructura, luego migrar a REVIEW
+
+DOCUMENTO ACTUAL:
+  Costos Colegio Internacional.xlsx
+
+ANÁLISIS:
+  - Contiene modelo de costos y presupuestos
+  - Es de naturaleza financiera
+  - Parece ser preliminar
+
+RECOMENDACIÓN:
+  → Área: FIN (Finanzas)
+  → Tipo: Modelo_Costos / Presupuesto_Inicial
+  → Nombre: 20251216_FIN_Modelo_Costos_Operativos_Proyecto_ES_DRAFT_v01.xlsx
+  → Subcarpeta: 01_Presupuesto_y_Planeación_Financiera
+  → Acción: Revisar categorías, estructurar por centro de costos
+
+DOCUMENTO ACTUAL:
+  PBL Museo de la Memoria y la Reconciliación de Colombia - Juan Pablo Valderrama Pino.pdf
+
+ANÁLISIS:
+  - Es una unidad didáctica (Unit) basada en PBL
+  - Tema: Historia/Ciencias Sociales
+  - Grado estimado: 4 (primaria alta)
+  - Bilingüe o inglés
+
+RECOMENDACIÓN:
+  → Área: ACD (Académico)
+  → Tipo: Unit / Unidad_PBL
+  → Tema: Museo / Memoria / Reconciliación
+  → Nombre: 20251216_ACD_Unit_PBL_MuseoMemoriaReconciliacion_G4_BI_DRAFT_v01.pdf
+  → Subcarpeta: 02_Primaria / 02_Unidades_(Units)_PBL
+  → Acción: Integrar a portafolio de unidades modelo
+
+DOCUMENTO ACTUAL:
+  PBL Museo de la Memoria y Reconciliación en Colombia - 10 - Ciencias Sociales - Juan Pablo Valderrama Pino.pdf
+
+ANÁLISIS:
+  - Similar al anterior, pero más enfocado en Ciencias Sociales
+  - Parece versión más detallada o complementaria
+  - Número 10 sugiere parte de un conjunto
+
+RECOMENDACIÓN:
+  → Área: ACD (Académico)
+  → Tipo: Unit / Guía_Docente
+  → Nombre: 20251216_ACD_Guía_Unit_PBL_MuseoMemoria_CienciasSociales_G4_ES_DRAFT_v01.pdf
+  → Subcarpeta: 02_Primaria / 02_Unidades_(Units)_PBL
+  → Acción: Revisar si es complemento o versión del anterior
+
+CARPETA ACTUAL:
+  Acreditación IPC
+
+ANÁLISIS:
+  - Contiene documentos sobre acreditación
+  - Cognia es estándar internacional
+  - Importante para calidad y legitimidad
+
+RECOMENDACIÓN:
+  → Área: ACD (Académico)
+  → Subcarpeta: 05_Acreditaciones_y_Alianzas_Académicas
+  → Acción: Revisar contenido interno y reclasificar documentos individuales
+
+CARPETA ACTUAL:
+  Documentos Institucionales VIS
+
+ANÁLISIS:
+  - Nombre genérico: probablemente PEI, políticas, manuales
+  - VIS = Valderrama International School
+
+RECOMENDACIÓN:
+  → Revisar contenido interior
+  → Probable distribución a GOV (PEI, políticas) y LEG (pólizas, contratos)
+
+CARPETA ACTUAL:
+  Imágenes para publicar
+
+ANÁLISIS:
+  - Recursos gráficos para comunicación
+
+RECOMENDACIÓN:
+  → Área: ADM (Admisiones)
+  → Subcarpeta: 01_Branding_y_Activos
+  → Estructurar en: Logos, Fotografías, Elementos_Visuales, etc.
+
+CARPETA ACTUAL:
+  Plan de negocios
+
+ANÁLISIS:
+  - Modelo de negocio, proyecciones, análisis de mercado
+
+RECOMENDACIÓN:
+  → Área: FIN (Finanzas) o PROY (Proyectos Especiales)
+  → Si es de inicio: PROY / 04_Infraestructura_Futura
+  → Si es operativo: FIN / 01_Presupuesto_y_Planeación_Financiera
+  → Acción: Revisar si es futuro o actual
+
+CARPETA ACTUAL:
+  Secciones Escolares
+
+ANÁLISIS:
+  - Probablemente organización por niveles (Preschool, Primaria)
+
+RECOMENDACIÓN:
+  → Área: ACD (Académico)
+  → Revisar contenido y reclasificar:
+     - Horarios → 06_Calendario_Académico_y_Horarios
+     - Mallas → Preschool o Primaria / 01_Mallas_y_Planes_de_Área
+     - Organización → 00_Diseño_Curricular_Institucional
+
+CARPETA ACTUAL:
+  Áreas Académicas
+
+ANÁLISIS:
+  - Estructura curricular por áreas (Math, Language, Science, etc.)
+
+RECOMENDACIÓN:
+  → Área: ACD (Académico)
+  → Reclasificar en: 01_Preschool / 01_Mallas_y_Planes_de_Área
+                 o  02_Primaria / 01_Mallas_y_Planes_de_Área
+  → Crear: 01_Mallas_Preschool_Math, 01_Mallas_Primaria_Language, etc.
+
+================================================================================
+6. PROCESO RECOMENDADO (Próximos pasos)
+================================================================================
+
+FASE 1 - INSPECCIÓN (Esta semana)
+  □ Abre cada carpeta en 00_Inbox_Por_Clasificar
+  □ Lee títulos y contenidos brevemente
+  □ Identifica duplicados o versiones antiguas
+  □ Marca archivos para ARCHIVAR (histórico)
+
+FASE 2 - NOMBRADO (Siguiente semana)
+  □ Renombra archivos usando nomenclatura estándar
+  □ Copia fecha aproximada en nombre (si no la tienes exacta, usa hoy)
+  □ Usa DRAFT como estado inicial
+
+FASE 3 - REUBICACIÓN (Semana siguiente)
+  □ Mueve archivos a carpeta destino
+  □ Crea subcarpetas internas si falta
+  □ Verifica que no haya duplicados
+
+FASE 4 - VALIDACIÓN (Mensual)
+  □ Revisa nombres vs. estándar
+  □ Detecta archivos "TMP_" o sin nomenclatura
+  □ Genera reporte de cumplimiento
+
+================================================================================
+7. CONTACTA AL EQUIPO PARA:
+================================================================================
+
+□ Dudas sobre a qué área pertenece un documento
+□ Necesidad de crear nuevas subcarpetas
+□ Establecer permisos de lectura/escritura por rol
+□ Automatizar la migración de documentos
+
+================================================================================
+ARCHIVO CREADO: 2025-12-16
+PRÓXIMA REVISIÓN: 2026-01-20
+================================================================================

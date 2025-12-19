@@ -1,0 +1,63 @@
+================================================================================
+ACTIVIDADES PARALELAS – MIENTRAS SE ABRE FIGMA
+VALDERRAMA INTERNATIONAL SCHOOL
+Versión: 1.0 | 17 diciembre 2025
+================================================================================
+
+OBJETIVO
+Aprovechar el tiempo mientras se crea la cuenta Figma para avanzar en tareas de contenido, SEO, integraciones y especificaciones técnicas que no dependen del diseño visual.
+
+TAREA 1 – Traducción al Inglés (Prioridad Alta)
+- Traducir Home, Admisiones, Programas, Costos, Contacto (~900 líneas)
+- Traducir labels de formularios y CTAs
+- Traducir metadatos SEO (titles/descriptions)
+- Entregable: 1 documento ES/EN por página
+
+TAREA 2 – Especificaciones de Formularios (Detalle Técnico)
+- Contacto, Información, Admisión (5 pasos), Beca, Tour
+- Campos, validaciones, mascarillas (teléfono), uploads
+- Emails transaccionales (to, subject, body ES/EN)
+- Almacenamiento en base de datos + exportación CSV
+- Entregable: Documento de especificación por formulario
+
+TAREA 3 – SEO On-Page (Meta Titles/Descriptions + URLs)
+- Generar titles (55-60 chars) y descriptions (150-160)
+- Definir slugs amigables /es/ y /en/
+- Mapa de interlinking (enlaces internos)
+- Entregable: Matriz SEO (CSV/Excel)
+
+TAREA 4 – Integraciones (APIs/Plugins)
+- Google Analytics 4 (propiedad + medición básica)
+- Google Search Console (propiedad del dominio)
+- reCAPTCHA v3 (claves)
+- Mailchimp/ConvertKit (lista de newsletter)
+- Instagram feed (token)
+- Google Calendar (API para agendar visita)
+- Entregable: Documento con claves y pasos de configuración
+
+TAREA 5 – Portales de Usuario (Estructura de Roles)
+- Perfiles: Padres, Estudiantes, Docentes
+- Contenido por rol (placeholders en Fase 1)
+- Permisos y navegación privada
+- Entregable: Esquema de roles y accesos
+
+TAREA 6 – Roadmap Fotográfico
+- Lista de imágenes por página (dimensiones, encuadre)
+- Ejemplos de estilo (referencias)
+- Plan de sesión (si aplica): locaciones, horarios, permisos
+- Entregable: Lista priorizada + guion fotográfico
+
+TAREA 7 – Guía Editorial (Tono y Voz)
+- Tono institucional, longitud, estructura de párrafos
+- Uso de "Valderrama is..." en secciones
+- CTAs estándar y consistencia
+- Entregable: Guía de estilo de contenido
+
+Cronograma Sugerido (3-5 días):
+Día 1: Formularios + SEO (matriz base)
+Día 2: Integraciones + Portales
+Día 3: Traducciones (inicio) + Roadmap fotográfico
+Día 4-5: Cierre traducciones + Guía editorial
+
+================================================================================
+FIN DEL DOCUMENTO

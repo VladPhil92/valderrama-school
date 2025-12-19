@@ -1,0 +1,319 @@
+================================================================================
+COMPONENTES REUTILIZABLES – VALDERRAMA INTERNATIONAL SCHOOL
+Librería de Elementos UI para Figma y Desarrollo
+Versión: 1.0 | 17 diciembre 2025
+================================================================================
+
+1. BOTONES
+
+PRIMARIO (CTA Principal):
+- Color: Rojo Valderrama (#C41E3A)
+- Tamaño: 48px altura (incluir padding)
+- Tipografía: Montserrat SemiBold 16px
+- Border Radius: 4px
+- Estados:
+  * Hover: Rojo más oscuro (-10% brightness)
+  * Focus: Border 2px rojo + outline
+  * Disabled: Gris claro, sin hover
+- Texto: "Agendar Visita", "Aplicar Ahora", "Enviar"
+
+SECUNDARIO (Acciones Alternativas):
+- Color: Verde Naturaleza (#2E7D32)
+- Tamaño: 48px altura
+- Tipografía: Montserrat SemiBold 16px
+- Border Radius: 4px
+- Estados: igual a primario
+- Texto: "Conoce Más", "Descargar", "Solicitar"
+
+TERCIARIO (Enlaces, Minimal):
+- Color: Azul Cielo (#3498DB)
+- Sin fondo, solo texto
+- Hover: Subrayado + más oscuro
+- Tipografía: Open Sans SemiBold 16px
+
+BOTÓN PEQUEÑO:
+- Altura: 40px
+- Tipografía: 14px
+- Border Radius: 4px
+- Uso: Filtros, tags, acciones secundarias
+
+2. FORMULARIOS
+
+INPUT TEXT:
+- Altura: 44px (mínimo táctil)
+- Border: 1px Gris Medio (#D1D5DB)
+- Padding: 12px horizontal, 10px vertical
+- Border Radius: 4px
+- Tipografía: Open Sans Regular 16px
+- Focus: Border 2px Azul Cielo
+- Placeholder: Gris claro, opacidad 60%
+- Error: Border rojo (#EF4444)
+
+TEXTAREA:
+- Alto mínimo: 120px
+- Resize: vertical solo
+- Igual estilo a input
+- Tipografía: Open Sans Regular 16px
+
+DROPDOWN:
+- Altura: 44px
+- Border: 1px Gris Medio
+- Padding: 12px
+- Focus: Border Azul Cielo
+- Icon: Chevron gris
+- Opción hover: Gris claro fondo
+
+CHECKBOX:
+- Tamaño: 18x18px
+- Border: 2px Gris Medio
+- Checked: Fondo Azul Cielo, checkmark blanco
+- Label: Open Sans Regular 16px, margen 12px
+
+RADIO BUTTON:
+- Tamaño: 18x18px
+- Border: 2px Gris Medio
+- Checked: Dot Azul Cielo interno
+- Label: Open Sans Regular 16px
+
+LABEL:
+- Tipografía: Montserrat SemiBold 14px
+- Color: Gris Oscuro (#111827)
+- Margen inferior: 8px
+
+3. TARJETAS
+
+TARJETA BÁSICA:
+- Border Radius: 8px
+- Border: 1px Gris Medio
+- Padding: 24px
+- Sombra: Shadow MD
+- Hover: Sombra LG, elevación visual
+- Contenido: Imagen (arriba) + título + descripción
+
+TARJETA PROGRAMA:
+- Ancho: igual en 4 columnas desktop
+- Imagen destacada: 200x150px
+- Título: H3 (24px)
+- Descripción: 2 líneas máximo
+- CTA: Botón pequeño verde
+- Colores accent: Border superior en verde
+
+TARJETA TESTIMONIO:
+- Circular avatar: 80x80px, border-radius full
+- Nombre: Montserrat Bold 16px
+- Rol: Open Sans Regular 14px gris
+- Cita: "..." en itálica, 16px
+- Layout: Vertical centrado
+
+TARJETA "VALDERRAMA IS...":
+- Color: Fondo sutilmente coloreado
+- Icono: 48x48px centro superior
+- Frase: Montserrat Bold 20px en inglés
+- Descripción: Open Sans Regular 16px en español
+- CTA: Botón o enlace abajo
+- Hover: Elevación, cambio color sutil
+
+4. HEADER Y NAVEGACIÓN
+
+HEADER STICKY:
+- Altura: 80px
+- Fondo: Blanco
+- Border-bottom: 1px Gris Medio
+- Z-index: 100
+- Logo: 150px ancho, centrado verticalmente
+- Navegación: 6 items, Open Sans SemiBold 16px
+- Language Toggle: Botón pequeño "ES | EN"
+- CTA: Botón primario "Agendar Visita"
+
+BREADCRUMB:
+- Open Sans Regular 14px
+- Separador: "/"
+- Colores: Gris oscuro > Gris medio > Gris oscuro (actual)
+- Última ruta: No es enlace
+- Margen arriba: 24px
+
+MEGA MENU (Mobile):
+- Hamburguesa icon: 24x24px
+- Overlay background: Negro 80% opacidad
+- Menu items: Full width, 56px altura cada uno
+- Secundario indent: 16px
+- Close: X arriba derecha
+
+5. HERO SECTION
+
+HERO FULL WIDTH:
+- Altura: 500px desktop, 400px móvil, 350px tablet
+- Imagen background: cover
+- Overlay: Gradiente negro 40% opacity para legibilidad
+- Contenido posicionado: centro-izquierda (responsive)
+
+HERO CONTENT:
+- H1: Montserrat Bold 48px (40px tablet, 32px mobile)
+- Subtítulo: Open Sans Regular 24px (20px mobile)
+- Espacio: 24px entre elementos
+- CTAs: Dos botones stacked mobile, side-by-side desktop
+- Margin: 48px horizontal desktop, 24px tablet, 16px mobile
+
+6. TABLAS
+
+TABLA BÁSICA:
+- Border collapse
+- Header row: Fondo Verde Naturaleza suave, Montserrat Bold 14px
+- Data rows: Open Sans Regular 14px
+- Alternate row: Gris claro fondo
+- Border: 1px Gris Medio entre filas
+- Padding: 12px celda
+- Responsive: Scroll horizontal en mobile
+
+TABLA COSTOS:
+- 5 columnas mínimo
+- Header: Fondo Verde suave
+- Valores destacados: Montserrat Bold
+- Descuentos: Verde (+)
+- Footer: Total en Bold
+
+7. ACORDEONES (FAQ)
+
+ACCORDION ITEM:
+- Fondo: Gris claro inicial, blanco cuando expandido
+- Header: 56px altura, clickeable full width
+- Título: Montserrat SemiBold 16px
+- Icon: Chevron rotable, 24x24px derecha
+- Contenido expandido: Padding 24px, Open Sans Regular 16px
+- Transición: 0.3s smooth
+- Border: 1px Gris Medio
+
+ACCORDION CONTAINER:
+- Gap entre items: 8px
+- Border separador: opcional
+
+8. TIMELINE
+
+TIMELINE ITEM:
+- Nodo: Círculo 24x24px, Azul Cielo
+- Línea conectora: 4px grosor, Verde Naturaleza
+- Contenido lado derecho (o alternando)
+- Título: Montserrat SemiBold 18px
+- Descripción: Open Sans Regular 14px, 2 líneas max
+
+MOBILE:
+- Todo apilado, nodos izquierda, línea izquierda
+- Contenido derecha con margen 24px
+
+9. BADGE / TAG
+
+BADGE:
+- Padding: 8px 12px
+- Border Radius: 20px (full)
+- Tipografía: Open Sans SemiBold 12px
+- Variantes por color: Rojo, Verde, Azul, Naranja, Gris
+- Uso: Categorías, estados, labels
+
+10. MODALES / POPUP
+
+MODAL OVERLAY:
+- Background: Negro 50% opacidad
+- Backdrop-filter: blur 4px (opcional)
+- Modal box: Blanco, border-radius 8px, sombra LG
+- Min-width: 320px, max-width: 600px, padding: 32px
+- Close button: X arriba derecha, 24x24px
+
+MODAL CONTENIDO:
+- H2 título: Montserrat Bold 28px
+- Descripción: Open Sans Regular 16px
+- Footer con botones (OK, Cancel, etc.)
+
+11. FOOTER
+
+FOOTER:
+- Fondo: Gris oscuro (#111827)
+- Texto: Blanco/Gris claro
+- Altura: 300px+
+- Columnas: 4 en desktop, 2 tablet, 1 mobile
+- Padding: 48px horizontal, 32px vertical
+
+FOOTER COLUMNAS:
+1. Logo + Descripción (2 líneas)
+2. Links rápidos (6 items)
+3. Contacto (email, tel, dirección)
+4. Redes sociales (5 iconos)
+
+FOOTER LINKS:
+- Open Sans Regular 14px
+- Hover: Verde (+10% opacity)
+- Gap vertical: 12px
+
+12. GALERÍA
+
+GALERÍA GRID:
+- 3 columnas desktop, 2 tablet, 1 mobile
+- Gap: 16px
+- Aspect ratio: 16:9 (responsive images)
+- Hover: Overlay oscuro + icono lupa
+- Lightbox: Click abre modal imagen grande
+
+13. ICONOGRAFÍA
+
+TAMAÑO ESTÁNDAR:
+- Small: 16x16px (labels, meta)
+- Medium: 24x24px (navigation, buttons)
+- Large: 48x48px (hero, featured)
+- Hero: 64x64px
+
+COLORES:
+- Default: Gris medio
+- Active/Hover: Rojo Valderrama o Verde
+- Disabled: Gris claro
+
+ESTILO:
+- Outline/Stroke: 2px
+- Set: Iconografía educativa (book, user, calendar, etc.)
+
+14. ESTADOS DE INTERACCIÓN
+
+HOVER:
+- Elevar sombra
+- Cambiar color secundario
+- Transición: 0.2s ease-in-out
+
+FOCUS (Keyboard):
+- Outline: 2px Azul Cielo
+- Offset: 2px
+- Visible en botones, links, inputs
+
+DISABLED:
+- Opacidad: 50%
+- Cursor: not-allowed
+- Sin hover states
+
+LOADING:
+- Spinner centrado
+- Color: Azul Cielo
+- Duración: 1s rotación infinita
+
+ERROR:
+- Border rojo (#EF4444)
+- Mensaje: Rojo, pequeño, bajo input
+- Icon: × rojo
+
+SUCCESS:
+- Border verde (#10B981)
+- Checkmark verde
+- Mensaje: Verde pequeño
+
+15. RESPONSIVE BREAKPOINTS
+
+DISEÑO FLUIDO:
+- Desktop: 1440px+ (full width)
+- Tablet: 768px-1439px (max-width 100%, padding 24px)
+- Mobile: 375px-767px (padding 16px, stacked)
+- Tiny: 320px (mínimo, layouts ultra-simples)
+
+AJUSTES POR BREAKPOINT:
+- Columnas: 4 → 2 → 1
+- Tipografía: -4px en mobile
+- Espaciado: -8px en mobile
+- CTAs: Full-width en mobile
+- Hero: Altura reducida 350px mobile
+
+FIN DEL DOCUMENTO

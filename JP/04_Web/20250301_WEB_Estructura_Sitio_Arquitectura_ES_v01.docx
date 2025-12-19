@@ -1,0 +1,715 @@
+================================================================================
+ESTRUCTURA DEL SITIO WEB - VALDERRAMA INTERNATIONAL SCHOOL
+Arquitectura de Información y Navegación
+Versión: 1.0 | Diciembre 2025
+================================================================================
+
+PRINCIPIOS DE DISEÑO WEB
+
+1. BILINGÜE: Todo contenido en español E inglés (switch de idioma prominente)
+2. RESPONSIVE: Optimizado para móvil, tablet, desktop
+3. ACCESIBLE: WCAG 2.1 AA compliance
+4. RÁPIDO: Tiempo de carga < 3 segundos
+5. SEO-OPTIMIZADO: Meta tags, schema markup, sitemap
+6. CONVERSIÓN: CTAs claros hacia admisión
+
+================================================================================
+MAPA DEL SITIO - NAVEGACIÓN PRINCIPAL
+================================================================================
+
+HOME / INICIO
+│
+├── SOBRE NOSOTROS / ABOUT US
+│   ├── Nuestra Historia / Our Story
+│   ├── Misión, Visión y Valores / Mission, Vision & Values
+│   ├── Filosofía Educativa / Educational Philosophy
+│   │   ├── Modelo IB (PYP, MYP, DP)
+│   │   ├── Método Montessori
+│   │   └── Sistema SBG
+│   ├── Nuestro Campus / Our Campus
+│   ├── Certificaciones y Acreditaciones / Certifications
+│   └── Equipo Directivo / Leadership Team
+│
+├── PROGRAMA ACADÉMICO / ACADEMIC PROGRAM
+│   ├── Preescolar (Ages 3-5) / Preschool
+│   │   ├── Programa PYP + Montessori
+│   │   ├── Desarrollo por Áreas
+│   │   ├── Horario y Actividades
+│   │   └── Galería de Fotos
+│   ├── Primaria (Grados 1-5) / Elementary
+│   │   ├── Programa PYP
+│   │   ├── Áreas de Estudio
+│   │   ├── Evaluación SBG
+│   │   └── Proyectos Destacados
+│   ├── Secundaria (Grados 6-9) / Middle School
+│   │   ├── Programa MYP
+│   │   ├── Áreas de Estudio
+│   │   ├── Electivas
+│   │   └── Servicio Comunitario
+│   └── Media (Grados 10-12) / High School
+│       ├── Programa IB DP
+│       ├── Diplomas Duales (DP + AP)
+│       ├── Orientación Universitaria
+│       └── Resultados y Admisiones Universitarias
+│
+├── BILINGÜISMO / BILINGUAL PROGRAM
+│   ├── Modelo 50/50
+│   ├── Niveles de Competencia Esperada
+│   ├── Certificaciones (Cambridge, TOEFL)
+│   └── Apoyo para Estudiantes Nuevos
+│
+├── ADMISIONES / ADMISSIONS
+│   ├── Proceso de Admisión / Admission Process
+│   │   ├── Cronograma / Timeline
+│   │   ├── Requisitos / Requirements
+│   │   ├── Evaluaciones / Assessments
+│   │   └── Criterios de Selección / Selection Criteria
+│   ├── Solicitar Admisión / Apply Now (CTA)
+│   │   └── Formulario Online / Online Form
+│   ├── Agendar Visita / Schedule a Tour
+│   ├── Preguntas Frecuentes / FAQ
+│   └── Contacto Admisiones / Admissions Contact
+│
+├── COSTOS Y BECAS / TUITION & FINANCIAL AID
+│   ├── Estructura de Aranceles / Tuition Structure
+│   │   ├── Por Nivel (Preescolar-Media)
+│   │   ├── Costos Adicionales
+│   │   └── Formas de Pago
+│   ├── Descuentos / Discounts
+│   │   ├── Hermanos / Siblings
+│   │   ├── Pago Anticipado / Early Payment
+│   │   └── Empleados / Staff
+│   ├── Becas / Scholarships
+│   │   ├── Beca por Mérito / Merit-Based
+│   │   ├── Beca por Necesidad / Need-Based
+│   │   └── Solicitar Beca / Apply for Scholarship
+│   └── Política de Reembolsos / Refund Policy
+│
+├── VIDA ESTUDIANTIL / STUDENT LIFE
+│   ├── Actividades Extracurriculares / Extracurriculars
+│   │   ├── Deportes / Sports
+│   │   ├── Arte y Música / Arts & Music
+│   │   ├── Robótica y STEM / Robotics & STEM
+│   │   └── Clubes / Clubs
+│   ├── Calendario Académico / Academic Calendar
+│   ├── Horarios / Schedules
+│   ├── Transporte y Comedor / Transportation & Meals
+│   ├── Servicios de Apoyo / Support Services
+│   │   ├── Orientación / Counseling
+│   │   ├── Tutorías / Tutoring
+│   │   └── Atención a Diversidad / Special Needs
+│   └── Galería de Fotos y Videos / Gallery
+│
+├── PADRES / PARENTS
+│   ├── Portal de Padres (Login) / Parent Portal
+│   │   ├── Calificaciones / Grades
+│   │   ├── Asistencia / Attendance
+│   │   ├── Comunicaciones / Communications
+│   │   └── Eventos / Events
+│   ├── Manual de Padres / Parent Handbook
+│   ├── Calendario de Eventos / Events Calendar
+│   ├── Comunicaciones Importantes / Important Communications
+│   ├── Asociación de Padres / Parent Association
+│   └── Recursos para Padres / Parent Resources
+│
+├── NOTICIAS Y EVENTOS / NEWS & EVENTS
+│   ├── Blog / Noticias / News
+│   ├── Eventos Próximos / Upcoming Events
+│   ├── Boletín Mensual / Monthly Newsletter
+│   └── Galería de Eventos / Event Gallery
+│
+└── CONTACTO / CONTACT
+    ├── Formulario de Contacto / Contact Form
+    ├── Direcciones y Horarios / Location & Hours
+    ├── Teléfonos y Emails / Phone & Email
+    ├── Mapa Interactivo / Interactive Map
+    └── Redes Sociales / Social Media
+
+================================================================================
+NAVEGACIÓN SECUNDARIA (Footer)
+================================================================================
+
+INFORMACIÓN INSTITUCIONAL:
+- Políticas Institucionales / Institutional Policies
+- Manual de Convivencia / Student Handbook
+- Código de Conducta / Code of Conduct
+- Privacidad y Protección de Datos / Privacy Policy
+- Términos y Condiciones / Terms & Conditions
+
+RECURSOS:
+- Documentos Descargables / Downloads
+- Formularios / Forms
+- Preguntas Frecuentes / FAQ
+- Glosario de Términos Educativos / Glossary
+
+INFORMACIÓN LEGAL:
+- Licencias y Acreditaciones / Licenses & Accreditations
+- Resoluciones MEN / MEN Resolutions
+- Registro Institucional / Institutional Registration
+
+ENLACES RÁPIDOS:
+- Portal de Docentes / Teacher Portal (Login)
+- Portal de Estudiantes / Student Portal (Login)
+- Portal de Padres / Parent Portal (Login)
+- Solicitar Información / Request Information
+- Agendar Visita / Schedule Tour
+- Aplicar Ahora / Apply Now
+
+REDES SOCIALES:
+- Facebook
+- Instagram
+- Twitter/X
+- LinkedIn
+- YouTube
+- WhatsApp Business
+
+================================================================================
+CONTENIDO POR PÁGINA - HOME / INICIO
+================================================================================
+
+HERO SECTION:
+Título: "Educación Internacional de Excelencia en Cartagena"
+Subtítulo: "Colegio Bilingüe IB | Preescolar a Grado 12"
+CTA Principal: "Agendar Visita" + "Aplicar Ahora"
+Imagen: Campus, estudiantes diversos, ambiente de aprendizaje
+
+SECCIÓN 1: DIFERENCIADORES (3 columnas)
+- IB World School (PYP, MYP, DP)
+- Bilingüismo 50/50 (Español-Inglés)
+- Diplomas Duales (IB DP + AP)
+
+SECCIÓN 2: NIVELES EDUCATIVOS (4 cards)
+- Preescolar (Ages 3-5): PYP + Montessori
+- Primaria (1-5): PYP
+- Secundaria (6-9): MYP
+- Media (10-12): DP
+[Cada card con foto + descripción breve + CTA "Conocer Más"]
+
+SECCIÓN 3: VIDEO INSTITUCIONAL
+Embed de video (2-3 min): Tour virtual, testimonios, filosofía
+
+SECCIÓN 4: NÚMEROS/ESTADÍSTICAS (4 columnas)
+- 100% Bilingüe
+- Escala SBG 1-4 (No calificaciones numéricas)
+- 15 estudiantes/aula (máximo)
+- 95% admisión universitaria internacional (proyección)
+
+SECCIÓN 5: TESTIMONIOS
+Carrusel con testimonios de:
+- Padres actuales
+- Estudiantes
+- Alumni (futuro)
+- Docentes
+
+SECCIÓN 6: PRÓXIMOS EVENTOS
+Lista de 3 eventos próximos con CTAs
+
+SECCIÓN 7: BLOG/NOTICIAS
+Últimas 3 entradas del blog
+
+SECCIÓN 8: CTA FINAL
+"¿Listo para comenzar?"
+Botones: "Agendar Visita" + "Solicitar Información"
+
+================================================================================
+CONTENIDO POR PÁGINA - SOBRE NOSOTROS
+================================================================================
+
+NUESTRA HISTORIA:
+- Fundación (año, fundadores)
+- Motivación (por qué Valderrama)
+- Crecimiento y proyección
+- Hitos institucionales
+
+MISIÓN:
+"Formar ciudadanos globales, bilingües y reflexivos que dominan dos lenguas
+fluidamente, desarrollan pensamiento crítico, ejercen liderazgo ético y
+contribuyen al bien común local y global."
+
+VISIÓN:
+"Ser reconocida en Cartagena y el país por excelencia académica certificada
+internacionalmente (IB), educación bilingüe de calidad, formación de líderes
+éticos con conciencia global e innovación pedagógica."
+
+VALORES (6 valores con íconos):
+1. Excelencia
+2. Integridad
+3. Inclusión
+4. Responsabilidad Social
+5. Respeto
+6. Innovación
+[Cada valor con descripción breve]
+
+FILOSOFÍA EDUCATIVA:
+Integración de 3 pilares:
+- IB (Currículo riguroso internacional)
+- Montessori (Aprendizaje autónomo)
+- SBG (Evaluación basada en competencias)
+
+NUESTRO CAMPUS:
+- Galería de fotos
+- Descripción de instalaciones
+- Tour virtual 360°
+
+CERTIFICACIONES:
+- IB World School (logo + certificado)
+- Resolución MEN (número)
+- Otras acreditaciones
+
+EQUIPO DIRECTIVO:
+- Rector/a
+- Coordinador/a Académico
+- Coordinador/a de Convivencia
+- Orientador/a
+[Cada uno con foto, bio breve, email]
+
+================================================================================
+CONTENIDO POR PÁGINA - PROGRAMA ACADÉMICO (Ejemplo: PRIMARIA)
+================================================================================
+
+HERO:
+Título: "Primaria (Grados 1-5) - IB Primary Years Programme"
+Imagen: Aula de primaria en acción
+
+INTRODUCCIÓN:
+Descripción del programa (2-3 párrafos):
+- Edades 6-11 años
+- IB PYP framework
+- Bilingüismo 50/50
+- Evaluación SBG
+- Énfasis en indagación
+
+ÁREAS DE ESTUDIO (Tabs o Acordeón):
+1. Lenguaje (Español + Inglés)
+2. Matemáticas
+3. Ciencias
+4. Estudios Sociales
+5. Arte
+6. Música
+7. Educación Física
+8. Tecnología
+
+METODOLOGÍA:
+- Aprendizaje basado en indagación
+- Proyectos interdisciplinarios
+- Unidades temáticas
+- Evaluación formativa continua
+
+EVALUACIÓN SBG:
+Explicación de escala 1-4:
+- Nivel 4: Excepcional
+- Nivel 3: Competente
+- Nivel 2: Desarrollando
+- Nivel 1: Iniciando
+
+HORARIO TÍPICO:
+Tabla de distribución de día escolar
+
+RECURSOS Y APOYOS:
+- Biblioteca bilingüe
+- Laboratorio de computación
+- Tutorías académicas
+- Apoyo para diversidad
+
+PRÓXIMOS PASOS:
+CTAs: "Agendar Visita" + "Aplicar"
+
+================================================================================
+CONTENIDO POR PÁGINA - ADMISIONES
+================================================================================
+
+HERO:
+Título: "Únete a Nuestra Comunidad"
+Subtítulo: "Proceso de admisión transparente y equitativo"
+
+CRONOGRAMA:
+Timeline visual:
+Enero-Feb: Sesiones informativas
+Marzo-Abril: Solicitudes
+Mayo: Evaluaciones
+Junio: Decisiones
+Julio: Matrícula
+Agosto: Inicio de clases
+
+PROCESO (10 PASOS):
+1. Asistir a sesión informativa
+2. Completar solicitud online
+3. Pagar cuota de admisión (300,000 COP)
+4. Evaluación académica
+5. Evaluación psicopedagógica (si aplica)
+6. Entrevista familiar
+7. Decisión del comité
+8. Comunicación de resultado
+9. Confirmación y depósito
+10. Matrícula
+
+REQUISITOS:
+Documentos necesarios (checklist):
+- Acta de nacimiento
+- Documento de identidad (padres)
+- Certificado de vacunación
+- Último reporte de notas
+- Evaluación psicopedagógica previa (si existe)
+- Documentos de diagnóstico (si NEE)
+
+CRITERIOS DE SELECCIÓN:
+- Potencial académico
+- Madurez socioemocional
+- Alineación con filosofía
+- Capacidad institucional
+
+POLÍTICA DE NO DISCRIMINACIÓN:
+Texto claro sobre inclusión
+
+CTA PRINCIPAL:
+Botón grande: "APLICAR AHORA"
+
+AGENDAR VISITA:
+Calendario integrado para seleccionar fecha
+
+FAQ:
+Preguntas frecuentes sobre admisión
+
+CONTACTO:
+Email: admisiones@valderramais.edu.co
+Teléfono: +57 (5) XXX-XXXX
+WhatsApp: +57 XXX XXX XXXX
+
+================================================================================
+CONTENIDO POR PÁGINA - COSTOS Y BECAS
+================================================================================
+
+ESTRUCTURA DE ARANCELES 2025-2026:
+
+Tabla clara:
+NIVEL | MENSUAL | ANUAL (10 meses)
+Preescolar | 2.850.000 COP | 28.500.000 COP
+Primaria | 3.200.000 COP | 32.000.000 COP
+Secundaria | 3.800.000 COP | 38.000.000 COP
+Media | 4.500.000 COP | 45.000.000 COP
+
+INCLUYE:
+- Educación bilingüe de excelencia
+- Materiales académicos
+- Acceso a tecnología
+- Actividades extracurriculares básicas
+- Exámenes IB (Media)
+
+NO INCLUYE:
+- Uniforme (estimado: 480-750k COP)
+- Útiles escolares (300-650k COP)
+- Transporte (opcional: 350-520k COP/mes)
+- Comidas (opcional: 85-140k COP/mes)
+- Certificaciones externas (Cambridge, TOEFL)
+
+FORMAS DE PAGO:
+- Mensual
+- Trimestral (2% descuento)
+- Semestral (3% descuento)
+- Anual anticipado (4% descuento)
+
+DESCUENTOS:
+- Hermanos: 10-15%
+- Empleados: 15%
+- Pago anticipado: 3-4%
+- Referencia: 5%
+
+BECAS:
+Sección 1: Beca por Mérito
+- 10-20% descuento
+- Criterios: Excelencia académica
+- Número limitado
+
+Sección 2: Beca por Necesidad
+- 10-50% descuento
+- Criterios: Situación económica + capacidad académica
+- Máximo 10% de estudiantes
+- CTA: "Solicitar Beca"
+
+TRANSPARENCIA:
+Nota sobre actualización anual (inflación)
+
+POLÍTICA DE REEMBOLSOS:
+Resumen de condiciones
+
+================================================================================
+CONTENIDO POR PÁGINA - VIDA ESTUDIANTIL
+================================================================================
+
+ACTIVIDADES EXTRACURRICULARES:
+
+DEPORTES:
+- Fútbol
+- Baloncesto
+- Natación
+- Atletismo
+- Voleibol
+[Fotos de equipos]
+
+ARTE Y MÚSICA:
+- Artes visuales
+- Teatro
+- Música (instrumentos)
+- Danza
+[Galería de obras]
+
+ROBÓTICA Y STEM:
+- Club de robótica
+- Programación
+- Ciencias experimentales
+- Matemáticas aplicadas
+
+CLUBES:
+- Debate
+- Modelo ONU
+- Ajedrez
+- Lectura
+- Medio ambiente
+
+CALENDARIO ACADÉMICO:
+Calendario interactivo con:
+- Inicio/fin de trimestres
+- Vacaciones
+- Eventos especiales
+- Días festivos
+
+SERVICIOS DE APOYO:
+- Orientación psicopedagógica
+- Tutorías académicas
+- Atención a diversidad
+- Biblioteca
+
+GALERÍA:
+Grid de fotos/videos de actividades
+
+================================================================================
+CONTENIDO POR PÁGINA - CONTACTO
+================================================================================
+
+FORMULARIO DE CONTACTO:
+Campos:
+- Nombre completo
+- Email
+- Teléfono
+- Motivo (dropdown: Admisiones, Información, Quejas, Otros)
+- Mensaje
+- Botón: "Enviar"
+
+INFORMACIÓN DE CONTACTO:
+
+DIRECCIÓN:
+Valderrama International School
+Calle XX # XX-XX, Sector XXX
+Cartagena, Bolívar, Colombia
+
+TELÉFONOS:
+Oficina Principal: +57 (5) XXX-XXXX
+Admisiones: +57 (5) XXX-XXXX
+WhatsApp: +57 XXX XXX XXXX
+
+EMAILS:
+General: info@valderramais.edu.co
+Admisiones: admisiones@valderramais.edu.co
+Rector: rector@valderramais.edu.co
+
+HORARIO DE ATENCIÓN:
+Lunes-Viernes: 7:30 AM - 4:00 PM
+Sábados (admisiones): 9:00 AM - 12:00 PM
+
+MAPA INTERACTIVO:
+Google Maps embed con ubicación
+
+REDES SOCIALES:
+Enlaces a perfiles activos
+
+================================================================================
+FUNCIONALIDADES TÉCNICAS REQUERIDAS
+================================================================================
+
+1. SISTEMA DE GESTIÓN DE CONTENIDO (CMS):
+   - WordPress (recomendado) o alternativa
+   - Multilenguaje (WPML o Polylang)
+   - Editor visual (Elementor o similar)
+
+2. FORMULARIOS:
+   - Contact Form 7 o Gravity Forms
+   - Integración con email
+   - Validación de campos
+   - Anti-spam (reCAPTCHA)
+
+3. PORTAL DE USUARIOS:
+   - Sistema de login (padres, estudiantes, docentes)
+   - Perfiles diferenciados
+   - Acceso a información personalizada
+   - Integración con sistema académico (futuro)
+
+4. CALENDARIO:
+   - Plugin de calendario (Events Calendar)
+   - Vista mensual/semanal/diaria
+   - Filtros por tipo de evento
+   - Suscripción iCal
+
+5. GALERÍA:
+   - Plugin de galería (Envira o similar)
+   - Lightbox
+   - Organización por álbumes
+   - Videos embebidos
+
+6. SEO:
+   - Yoast SEO o Rank Math
+   - Meta tags optimizados
+   - Schema markup (Organization, EducationalOrganization)
+   - Sitemap XML
+   - Open Graph para redes sociales
+
+7. PERFORMANCE:
+   - Caché (WP Rocket o W3 Total Cache)
+   - Optimización de imágenes (Smush o ShortPixel)
+   - CDN (Cloudflare)
+   - Lazy loading
+
+8. SEGURIDAD:
+   - SSL certificate (HTTPS)
+   - Firewall (Wordfence o Sucuri)
+   - Backups automáticos
+   - 2FA para admin
+
+9. ANALYTICS:
+   - Google Analytics 4
+   - Google Search Console
+   - Heatmaps (Hotjar o similar)
+
+10. INTEGRACIÓN CON REDES SOCIALES:
+    - Feed de Instagram
+    - Botones de compartir
+    - WhatsApp Business widget
+
+================================================================================
+REQUERIMIENTOS DE HOSTING
+================================================================================
+
+ESPECIFICACIONES MÍNIMAS:
+- Servidor: VPS o Cloud Hosting
+- RAM: 4GB mínimo
+- Almacenamiento: 50GB SSD
+- Ancho de banda: Ilimitado o 1TB/mes
+- PHP: 8.0+
+- MySQL: 5.7+
+- SSL: Incluido
+- Backups: Diarios automáticos
+- Uptime: 99.9% garantizado
+
+PROVEEDORES RECOMENDADOS (Colombia):
+- Hostinger Colombia
+- SiteGround
+- Kinsta (premium)
+- WP Engine (premium)
+- Servidor local colombiano (mejor velocidad)
+
+DOMINIO:
+- valderramais.edu.co (preferido .edu.co requiere registro MEN)
+- valderramais.com.co (alternativa)
+- valderramais.com (internacional)
+
+EMAILS INSTITUCIONALES:
+- G Suite / Google Workspace (recomendado)
+- Microsoft 365
+- Hosting email propio
+
+================================================================================
+CRONOGRAMA DE DESARROLLO WEB
+================================================================================
+
+SEMANA 1-2: PREPARACIÓN
+- Contratación de diseñador/desarrollador
+- Definición de diseño visual (mockups)
+- Preparación de contenido
+- Traducción a inglés
+- Selección de imágenes/videos
+
+SEMANA 3-4: DESARROLLO
+- Instalación de CMS
+- Configuración de plugins
+- Desarrollo de páginas
+- Integración de contenido
+- Configuración de formularios
+
+SEMANA 5: TESTING
+- Pruebas de funcionalidad
+- Pruebas de responsive
+- Pruebas de velocidad
+- Correcciones de bugs
+- Optimización SEO
+
+SEMANA 6: LANZAMIENTO
+- Configuración de dominio
+- Migración a servidor producción
+- Configuración de analytics
+- Configuración de backups
+- Monitoreo inicial
+
+MANTENIMIENTO CONTINUO:
+- Actualizaciones de seguridad
+- Nuevos contenidos (blog)
+- Optimización continua
+- Análisis de métricas
+
+================================================================================
+PRESUPUESTO ESTIMADO
+================================================================================
+
+DESARROLLO INICIAL:
+- Diseño web personalizado: 2.000.000 - 4.000.000 COP
+- Desarrollo WordPress: 3.000.000 - 6.000.000 COP
+- Contenido y copywriting: 1.000.000 - 2.000.000 COP
+- Fotografía profesional: 800.000 - 1.500.000 COP
+- Video institucional: 1.500.000 - 3.000.000 COP
+TOTAL INICIAL: 8.300.000 - 16.500.000 COP
+
+COSTOS ANUALES:
+- Hosting: 500.000 - 2.000.000 COP/año
+- Dominio: 50.000 - 100.000 COP/año
+- Emails (Google Workspace): 30.000 COP/usuario/mes
+- SSL: Incluido en hosting
+- Mantenimiento: 500.000 - 1.000.000 COP/año
+TOTAL ANUAL: 1.500.000 - 4.000.000 COP
+
+================================================================================
+MÉTRICAS DE ÉXITO
+================================================================================
+
+KPIs A MONITOREAR:
+
+TRÁFICO:
+- Visitantes únicos/mes
+- Páginas vistas
+- Tiempo en sitio
+- Tasa de rebote
+
+CONVERSIÓN:
+- Formularios completados
+- Solicitudes de información
+- Visitas agendadas
+- Aplicaciones iniciadas
+- Aplicaciones completadas
+
+ENGAGEMENT:
+- Descargas de brochure
+- Videos vistos
+- Compartidos en redes sociales
+- Newsletter suscripciones
+
+SEO:
+- Posición en Google (keywords target)
+- Backlinks
+- Domain Authority
+
+METAS AÑO 1:
+- 5,000 visitantes únicos/mes
+- 100 solicitudes de información
+- 50 visitas agendadas
+- 30 aplicaciones completadas
+
+================================================================================
+FIN DEL DOCUMENTO
+================================================================================

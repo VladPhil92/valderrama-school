@@ -1,0 +1,148 @@
+# Guía Institucional de Nomenclatura y Control de Versiones
+
+**Valderrama International School** | Aprobado: 2025 | V01 | ES
+
+---
+
+## 1. Objetivo
+
+Establecer una única convención para nombres de archivos y versiones, garantizando:
+
+- Identificación inequívoca del área responsable
+- Relevancia temporal (fecha de creación/modificación)
+- Claridad del tipo y tema del documento
+- Trazabilidad de cambios
+
+---
+
+## 2. Estructura del nombre de archivo
+
+**Formato estándar:**
+```
+YYYYMMDD_Area_TipoDocumento_Tema_Detalle_Idioma_Estado_v##.ext
+```
+
+**Campos:**
+- **YYYYMMDD:** Fecha de creación (ej 20251216)
+- **Area:** GOV, LEG, ACD, ADM, FIN, RRHH, OPS, TEC, COM, PROY
+- **TipoDocumento:** PEI, Política, Protocolo, Plan, Malla, Unit, Rubrica, Acta, Contrato, etc.
+- **Tema:** Nombre específico del contenido (ej. Admisiones, Convivencia, Evaluación, etc.)
+- **Detalle:** Si es necesario, un subtema o identificador (ej. G1, PreK, Básica)
+- **Idioma:** ES, EN, BI
+- **Estado:** DRAFT, REVIEW, APPROVED, FINAL
+- **v##:** v01, v02, v03...
+- **ext:** .docx, .pdf, .xlsx, .pptx, .img, ... (preferir extensión técnica)
+
+**Ejemplos:**
+```
+20251216_GOV_Política_Convivencia_ES_DRAFT_v01.docx
+20251216_ACD_Malla_Preschool_Math_PreK_EN_REVIEW_v02.xlsx
+20251216_RRHH_PerfilDocente_Primary_EN_APPROVED_v01.docx
+20251216_COM_ServiceLearning_Portafolio_Proyectos_ES_FINAL_v01.pdf
+```
+
+---
+
+## 3. Reglas prácticas para versionamiento
+
+| Estado | Usar cuando                                | Incremento de v## |
+|--------|-------------------------------------------|-------------------|
+| DRAFT  | Mientras se construye el documento        | Por cada cambio mayor |
+| REVIEW | Antes de enviar a revisión formal         | Si llega a v03+, se recomienda ir a v01 nuevo |
+| APPROVED| Tras aprobación interna (no cambios mayores) | Incrementar solo si se hacen ajustes leves |
+| FINAL  | Publicación oficial o presentación a terceros | Solo si hay corrección de erratas |
+
+**Buenas prácticas:**
+
+- **No borrar versiones anteriores:** mover a `99_Archivado_Histórico` del área
+- **PDF para versiones con firma/aprobarción:** generar PDF y mantener editable solo en `DRAFT`
+- **Log de cambios:** si la versión es `v02` o superior, incluir sección resumida de cambios (al pie del documento)
+- **Nomenclatura para plantillas:** usar prefijo `TPL_`, fecha opcional, mantener versión simple (`v01`)
+- **Recursos gráficos y multimedios:** usar formato minimalista sin área/estado.
+  - Ejemplos: `Logo_Principal_Color.png`, `Plantilla_presentaciones.pptx`, `Branding_GuiaColores.ai`
+- **Archivos temporales:** usar prefijo `TMP_` o `BORRADOR_` para evitar confusión
+
+---
+
+## 4. Áreas y códigos
+
+| Carpeta principal | Código |
+|--------------------|--------|
+| 01_Gobierno_Institucional_y_Estrategia | GOV |
+| 02_Legal_y_Regulatorio | LEG |
+| 03_Académico_y_Currículo | ACD |
+| 04_Admisiones_y_Mercadeo | ADM |
+| 05_Finanzas_y_Contabilidad | FIN |
+| 06_Recursos_Humanos | RRHH |
+| 07_Operaciones_y_Logística | OPS |
+| 08_Tecnología_y_Datos | TEC |
+| 09_Comunidad_y_Bienestar | COM |
+| 10_Proyectos_Especiales_y_Expansión | PROY |
+
+---
+
+## 5. Ubicación y convivencia con otros sistemas
+
+**Google Drive / OneDrive:** Mantener siempre la misma estructura de carpetas (01–10 y 99), usando la nomenclatura en el nombre. Los permisos deben corresponderse con el dueño del documento.
+
+**Versionado nativo (Drive):** Puede usarse como respaldo, pero el estándar institucional continúa siendo la fecha y v## en el nombre para facilitar búsquedas offline y auditerías.
+
+**Búsquedas:** Permitir identificar rápidamente:
+- “toda la documentación de políticas que están en APPROVED”
+- “qué documentos hay de PRESCHOOL en DRAFT”
+- “cuál es la última versión final del manual de convivencia”
+
+---
+
+## 6. Proceso de creación/modificación
+
+1. **Crear archivo** con nombre provisional `[TMP]Nombre.docx`
+2. **Llenar/escribir** contenido usando plantilla si aplica
+3. **Renombrar** a estándar con fecha, área y v01 DRAFT
+4. **Guardar** en la carpeta correcta dentro del área
+5. **Completar** ciclo de DRAFT → REVIEW → APPROVED → FINAL
+6. **Publicar** en el sitio web o comunicar según corresponda
+7. **Archivar** versiones previas a `99_Archivado_Histórico` del área
+
+---
+
+## 7. Auditoría y control
+
+**Responsables por área:**
+- Coordinador de área o designado → debe validar nombre y versión antes de pasar a REVIEW o APPROVED
+- Jefe de SGI → hace auditoría semestral del cumplimiento del estándar
+- Soporte técnico → colabora con formación y herramientas para automatizar (scripts, plantillas con campos)
+
+**Indicador de cumplimiento:** 
+- % de documentos en repositorio con nombre estándar y estado correcto
+- Tiempo promedio entre DRAFT y APPROVED
+- Casos ambíguos o duplicados detectados y corregidos por mes
+
+---
+
+## 8. Ejemplo práctico: ciclo de vida de una política
+
+1. **20251216** Rectoría crea `TMP_Política_Admisiones.docx` → renombra a `20251216_GOV_Política_Admisiones_ES_DRAFT_v01.docx`
+2. **20251219** Coordinación hace mejoras → `v02`
+3. **20251220** Enviado a comité → cambia a `20251216_GOV_Política_Admisiones_ES_REVIEW_v01.pdf`
+4. **20251222** Aprobado → `20251216_GOV_Política_Admisiones_ES_APPROVED_v01.pdf` (PDF) y se guarda el editable también.
+5. **20260115** Se hace un ajuste menor → sube a `v02` manteniendo APPROVED.
+6. **20260701** Se publica en web → genera `FINAL_v01` y archiva anteriores en `99_Archivado_Histórico`.
+
+---
+
+## 9. Comunicación de estándar
+
+- Sesión de inducción a todo nuevo personal
+- Resumen visual (poster) en área de RRHH
+- Ejemplos en la carpeta plantillas
+- Soporte técnico disponible para dudas
+
+---
+
+**Aprobado por:**  
+[Nombre y cargo]
+[Fecha]
+
+---
+*Esta guía forma parte de la documentación institucional de Valderrama International School.*

@@ -1,0 +1,92 @@
+================================================================================
+GUÍA TÉCNICA DE IMPLEMENTACIÓN – WORDPRESS
+VALDERRAMA INTERNATIONAL SCHOOL
+Versión: 1.0 | 17 diciembre 2025
+================================================================================
+
+OBJETIVO
+Estandarizar el proceso de instalación y configuración de WordPress, plugins, seguridad, rendimiento, SEO, multilenguaje y despliegue para valderramainternationalschool.com.
+
+1. INSTALACIÓN WORDPRESS
+- Requisitos: PHP 8.x, MySQL 5.7+, SSL
+- Permalinks: /%postname%/
+- Zona horaria: Bogotá
+- Limpieza: borrar Hello Dolly, post y página demo
+
+2. TEMA Y PAGE BUILDER
+- Opción preferida: Astra Pro + Elementor Pro
+- Child Theme: crear child y registrar tokens CSS variables
+- Global: contenedores, grid, tipografías (Montserrat/Open Sans)
+
+3. PLUGINS BASE
+- Seguridad: Wordfence
+- Caché: WP Rocket
+- SEO: Yoast SEO
+- Imágenes: ShortPixel (WebP)
+- Backups: UpdraftPlus
+- Multilenguaje: WPML (ES/EN)
+- Formularios: Gravity Forms + reCAPTCHA v3
+- Eventos: The Events Calendar Pro
+- Galería: Envira Gallery
+- SMTP: WP Mail SMTP
+- ACF Pro + CPT UI
+- Redirection, Really Simple SSL, MonsterInsights
+
+4. ESTRUCTURA DE CONTENIDO
+- Páginas base: Home, Sobre, Programas, Admisiones, Costos, Vida, Blog, Contacto
+- CPTs: Eventos (event), Galería (gallery), Testimonios (testimonial)
+- Taxonomías: Categorías de eventos, categorías de blog
+
+5. CAMPOS PERSONALIZADOS (ACF)
+- Hero: título, subtítulo, imagen, CTA principal/secundario
+- Valderrama Is: frase en EN, descripción ES, icono
+- Programa por nivel: edad, pilares, servicios, horarios, costos
+- Testimonio: nombre, rol, foto, cita
+- Evento: fecha, hora, lugar, registro activo (bool)
+
+6. FORMULARIOS
+- Contacto general (email a info@...)
+- Solicitud de información (admisiones@...)
+- Admisión (5 pasos + uploads + PDF)
+- Beca (requisitos + adjuntos)
+- Agendar visita (slots + notificaciones + Google Calendar)
+
+7. MULTILENGUAJE
+- Estructura de carpetas ES/EN
+- Traducción de strings de tema/plugins
+- Hreflang + switcher visible en header
+- Emails de formularios en idioma correspondiente
+
+8. SEO
+- Sitemap XML, robots.txt
+- Titles/descriptions únicos
+- Open Graph/Twitter Cards
+- Schema (Organization, EducationalOrganization, Article, Event)
+
+9. RENDIMIENTO
+- LCP < 2.5s, CLS < 0.1
+- WebP + Lazy load
+- Minify + Combine cuando sea seguro
+- Preload de fuentes/hero
+- CDN Cloudflare
+
+10. SEGURIDAD
+- SSL forzado
+- Firewall Wordfence básico
+- Limitar intentos, 2FA admin
+- Roles/usuarios mínimos necesarios
+- Backups diarios remoto (GDrive)
+
+11. DESPLIEGUE
+- Entorno staging -> producción
+- Revisión de enlaces y formularios
+- Purga de caché + Warmup
+- Envío de sitemap a GSC
+
+12. MANTENIMIENTO
+- Actualizaciones semanales
+- Chequeo mensual de rendimiento
+- Monitoreo de uptime
+- Auditoría trimestral de SEO
+
+FIN DEL DOCUMENTO

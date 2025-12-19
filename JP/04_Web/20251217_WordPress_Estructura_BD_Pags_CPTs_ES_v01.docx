@@ -1,0 +1,138 @@
+================================================================================
+ESTRUCTURA DE BASE DE DATOS – WORDPRESS (PÁGINAS, CPTs, TAXONOMÍAS)
+VALDERRAMA INTERNATIONAL SCHOOL
+Versión: 1.0 | 17 diciembre 2025
+================================================================================
+
+OBJETIVO
+Definir la jerarquía de páginas, los tipos de contenido personalizados (CPTs), taxonomías y campos personalizados (ACF) para implementar el sitio en WordPress con orden y escalabilidad.
+
+1. PÁGINAS (Pages)
+/ (Home)
+/es/sobre-nosotros/
+/es/programas/
+/es/admisiones/
+/es/costos-becas/
+/es/vida-estudiantil/
+/es/contacto/
+/es/blog/
+/es/padres/
+/es/buscar/
+/es/404/
+
+Anidar secundarias:
+/es/filosofia-educativa/
+/es/nuestro-campus/
+/es/equipo-directivo/
+/es/programas/preescolar/
+/es/programas/primaria/
+/es/programas/secundaria/
+/es/programas/media/
+/es/bilinguismo/
+/es/faq/
+/es/privacidad/
+/es/terminos/
+
+2. CPTs (Custom Post Types)
+- event (Eventos)
+  * Taxonomías: event_category (académicos, comunitarios, extracurriculares)
+- gallery (Galería)
+  * Taxonomías: gallery_topic (campus, eventos, actividades, grados)
+- testimonial (Testimonios)
+  * Taxonomías: testimonial_type (padres, estudiantes, docentes)
+
+Opcional futuro:
+- staff (Equipo) con taxonomía staff_role (rectoría, coordinación, docentes)
+
+3. TAXONOMÍAS PARA BLOG (core)
+- Categorías (Noticias, Académico, Comunidad, Nutrición)
+- Tags (libre)
+
+4. CAMPOS PERSONALIZADOS (ACF)
+Grupo: Global/Hero
+- hero_title (text)
+- hero_subtitle (text)
+- hero_image (image)
+- hero_cta_primary_label (text)
+- hero_cta_primary_url (url)
+- hero_cta_secondary_label (text)
+- hero_cta_secondary_url (url)
+
+Grupo: ValderramaIs/Card
+- vi_phrase_en (text)
+- vi_description_es (textarea)
+- vi_icon (image)
+
+Grupo: Program/Level
+- level_age (text)
+- level_pillars (repeater: título + descripción)
+- level_schedule (text)
+- level_services (repeater)
+- level_cost_range (text)
+
+Grupo: Testimonial
+- t_name (text)
+- t_role (text)
+- t_photo (image)
+- t_quote (textarea)
+
+Grupo: Event
+- ev_date (date)
+- ev_time (text)
+- ev_location (text)
+- ev_register_enabled (true/false)
+- ev_register_url (url)
+
+Grupo: Gallery
+- ga_album (text)
+- ga_images (gallery)
+
+Grupo: SEO (Yoast/RankMath ya gestionan metacampos)
+
+5. MULTILENGUAJE (WPML)
+- Estructura: /es/ y /en/
+- Páginas, CPTs y taxonomías traducibles
+- Campos ACF con traducción (definir como traducibles)
+- String translation: menús, widgets, cadenas de plugins
+
+6. NAVEGACIÓN (Menús)
+Main (ES): Home, Sobre, Programas, Admisiones, Costos, Vida, Blog, Contacto
+Main (EN): Home, About, Programs, Admissions, Tuition, Student Life, Blog, Contact
+Footer: Políticas, Términos, FAQ, Padres, Bilingüismo, Buscador
+
+7. PLANTILLAS (Theme/Page Builder)
+- Template Hero (con ACF Hero)
+- Template Listados (Blog, Eventos, Galería)
+- Template Detalle (Post, Evento, Galería)
+- Template Programa (ACF Level)
+- Template FAQ (acordeones)
+
+8. SLUGS Y URLS (SEO Friendly)
+/es/programas/preescolar/
+/es/programas/primaria/
+/es/programas/secundaria/
+/es/programas/media/
+/es/admisiones/proceso/
+/es/becas/
+/es/eventos/
+/es/evento/{{slug}}/
+/es/galeria/{{slug}}/
+
+9. PERMISOS Y ROLES
+- Administrator (IT)
+- Editor (Comunicaciones)
+- Author (Docentes seleccionados)
+- Contributor (Asistentes)
+- Subscriber (Padres/Estudiantes) – para portales futuros
+
+10. MIGRACIÓN Y BACKUPS
+- UpdraftPlus: diario a Google Drive
+- Exportación CPTs vía Tools > Export
+- ACF JSON (sincronización de campos)
+
+11. AUDITORÍA Y CONTROL
+- Revisión mensual de taxonomías (evitar duplicados)
+- Reglas de nomenclatura para slugs
+- Limpieza de borradores y media huérfana
+
+FIN DEL DOCUMENTO

@@ -1,0 +1,47 @@
+NO CONTENIDO - Este es un marcador para el archivo Figma/FigJam que contendrá los wireframes.
+
+Crear archivo en: https://www.figma.com
+Nombre del archivo: Valderrama IS - Wireframes LowFi v1.0
+
+ESTRUCTURA DE PÁGINAS EN FIGMA:
+1. Home
+2. Admisiones
+3. Preescolar
+4. Primaria
+5. Secundaria
+6. Media
+7. Costos y Becas
+8. Contacto
+9. Blog (Listado y Artículo)
+10. Eventos (Listado y Detalle)
+11. 404
+
+CADA PÁGINA CON TRES FRAMES:
+- Desktop (1440px)
+- Tablet (768px)
+- Mobile (375px)
+
+GRID Y REGLAS:
+- 12 columnas, 24px gutters
+- Margen exterior: 48px desktop, 24px tablet, 16px mobile COMPONENTES A DEFINIR:
+- Header sticky con logo y navegación
+- Hero con "Valderrama is..."
+- Tarjetas de diferenciadores
+- Timeline de admisiones
+- Tablas de costos
+- Calendario de eventos
+- Formularios (contacto, información, etc.)
+- Footer
+
+NOTAS DE DISEÑO:
+- Solo blanco, gris claro, gris medio, gris oscuro
+- Sin colores de marca
+- Sin fotografías (usar placeholders rectangulares)
+- Tipografía simple (sans-serif)
+- Etiquetar componentes para reutilizar
+
+ENTREGABLE AL FINAL DE LA SEMANA:
+- 33 frames (11 pags x 3 breakpoints)
+- Capas organizadas por página
+- Componentes etiquetados
+- Propuesta para Semana 2: Mockups alta fidelidad

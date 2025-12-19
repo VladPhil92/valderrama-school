@@ -1,0 +1,553 @@
+================================================================================
+GUÍA PRÁCTICA – CREAR MOCKUPS ALTA FIDELIDAD EN FIGMA
+VALDERRAMA INTERNATIONAL SCHOOL
+Semana 2-3 | Versión 1.0
+================================================================================
+
+OBJETIVO
+Crear diseños visuales completos (desktop + móvil) de 9 páginas clave usando
+tokens de color, tipografía y componentes definidos.
+
+================================================================================
+PASO 0: PREPARACIÓN EN FIGMA
+================================================================================
+
+1. CREAR ARCHIVO NUEVO
+- Ir a figma.com/files
+- Nuevo archivo: "Valderrama IS - Mockups HighFi v1.0"
+- Crear 2 archivos separados:
+  * A: Pages (Home, Admisiones, Blog)
+  * B: Components (Library reutilizable)
+
+2. CONFIGURAR PROYECTO
+- Crear carpeta: "Valderrama International School"
+- Dentro, archivo principal para mockups
+
+3. CREAR PÁGINAS EN FIGMA
+- Home
+- Admisiones
+- Preescolar
+- Primaria
+- Secundaria
+- Media
+- Costos y Becas
+- Contacto
+- Blog (Listado + Artículo)
+- Eventos (Listado)
+- 404
+
+4. GRID Y REGLAS
+Menú > Preferences > Guides & Grids
+- Grid size: 8px (para alineación perfecta)
+- Mostrar grid: Sí
+
+================================================================================
+PASO 1: CREAR SISTEMA DE DISEÑO EN FIGMA (Archivo B)
+================================================================================
+
+1. CREAR TOKENS DE COLOR
+
+Ir a: Assets > Colors
+Crear colores nombrados:
+- Primary/Red Valderrama: #C41E3A
+- Primary/Green Nature: #2E7D32
+- Secondary/Blue Sky: #3498DB
+- Secondary/Orange Human: #F57C00
+- Support/Green Fresh: #4CAF50
+- Support/Gray Tech: #546E7A
+- Neutral/White: #FFFFFF
+- Neutral/Gray Light: #F3F4F6
+- Neutral/Gray Medium: #D1D5DB
+- Neutral/Gray Dark: #111827
+- Feedback/Success: #10B981
+- Feedback/Warning: #F59E0B
+- Feedback/Error: #EF4444
+
+Estos aparecerán en el menú de relleno cuando diseñes.
+
+2. CREAR ESTILOS DE TIPOGRAFÍA
+
+Assets > Typography
+Crear estilos:
+- Display/48: Montserrat Bold 48px, line-height 1.2, tracking -0.02em
+- H1/40: Montserrat Bold 40px, line-height 1.2
+- H2/32: Montserrat SemiBold 32px, line-height 1.3
+- H3/24: Montserrat SemiBold 24px, line-height 1.4
+- Body/16: Open Sans Regular 16px, line-height 1.6
+- Label/14: Montserrat SemiBold 14px, line-height 1.5
+- Caption/12: Open Sans Regular 12px, line-height 1.4
+
+Ir a: Type > Add to assets (o guardar como componente de texto)
+
+3. CREAR COMPONENTES REUTILIZABLES
+
+BOTÓN PRIMARIO:
+- Rectangle 48px alto × 120px ancho (mínimo)
+- Fondo: Primary Red Valderrama
+- Texto: "Agendar Visita" (Montserrat SemiBold 16px, blanco)
+- Corner radius: 4px
+- Agrupar (Ctrl+G): nombre "Button/Primary"
+- Convertir a componente: Cmd+K (Mac) o Ctrl+Alt+K (Windows)
+- Crear variantes: Hover (rojo -10%), Focus, Disabled
+
+BOTÓN SECUNDARIO:
+- Igual a Primario pero:
+- Fondo: Primary Green Nature
+- Nombre: "Button/Secondary"
+
+BOTÓN PEQUEÑO:
+- 40px alto × 80px ancho
+- Nombre: "Button/Small Primary" o "Button/Small Secondary"
+
+INPUT TEXT:
+- Rectangle 44px alto
+- Border: 1px Gris Medium
+- Padding: 12px
+- Placeholder text: "Correo electrónico"
+- Corner radius: 4px
+- Nombre: "Input/Text"
+- Crear variantes: Focus (border Azul), Error, Disabled
+
+TARJETA BÁSICA:
+- Rectangle con border 1px Gris Medium
+- Padding: 24px
+- Corner radius: 8px
+- Sombra: 0 4px 6px rgba(0,0,0,0.1)
+- Nombre: "Card/Basic"
+
+TARJETA "VALDERRAMA IS...":
+- Background: Gris claro
+- Icono: 48x48px centro
+- Texto: "Valderrama is thinking critically."
+- Descripción: 2-3 líneas
+- CTA: Botón verde pequeño
+- Nombre: "Card/ValderramaIs"
+
+HEADER:
+- Rectangle blanco 80px alto × 1440px ancho
+- Logo: 150px ancho (importar PNG)
+- Nav items: 6 items de 16px cada uno
+- Language toggle: botón pequeño
+- CTA: Botón primario
+- Nombre: "Header/Desktop"
+
+================================================================================
+PASO 2: CREAR FRAMES PARA DESKTOP
+================================================================================
+
+HOME DESKTOP (1440px ancho × 3500px alto aproximado):
+
+FRAME STRUCTURE:
+1. Header (80px): Logo + Nav + Language + CTA
+2. Hero (500px): 
+   - Background: Gradiente rojo Valderrama
+   - Contenido: H1 + Subtítulo "Valderrama is..." + 2 botones
+   - Imagen side (placeholder)
+3. Diferenciadores (400px):
+   - 4 tarjetas grid (2x2)
+   - Icono + Título + Descripción
+4. "Valderrama is..." Banner (200px):
+   - Fondo Verde Nature
+   - Texto grande + descripción
+   - CTA
+5. Programas (350px):
+   - 4 tarjetas (1 columna cada una)
+6. Testimonios (400px):
+   - Carrusel visual (3 testimonios visibles)
+7. CTA Final (250px):
+   - Fondo oscuro
+   - Dos botones grandes
+8. Footer (300px):
+   - 4 columnas
+
+PROCESO:
+1. New Frame (Cmd+N)
+2. Renombrar: "Home / Desktop"
+3. Set size: 1440 × 3500
+4. Drag elements from components library
+5. Llena con contenido
+
+================================================================================
+PASO 3: CREAR FRAMES PARA TABLET
+================================================================================
+
+HOME TABLET (768px ancho × 4200px alto aproximado):
+
+CAMBIOS PRINCIPALES:
+- Hero: 400px alto (vs 500px desktop)
+- Diferenciadores: 2x2 grid sin cambios
+- Programas: 2 columnas
+- Tipografía: -4px en todos los headings
+- Padding: 24px vs 48px
+- Botones: full-width en secciones críticas
+
+PROCESO:
+1. Duplicar frame Home/Desktop
+2. Renombrar: "Home / Tablet"
+3. Set size: 768 × 4200
+4. Ajustar layouts con auto-layout
+5. Cambiar tamaño de fuentes y espaciado
+
+================================================================================
+PASO 4: CREAR FRAMES PARA MOBILE
+================================================================================
+
+HOME MOBILE (375px ancho × 5500px alto aproximado):
+
+CAMBIOS PRINCIPALES:
+- Hero: 350px alto
+- Diferenciadores: 1 columna
+- Programas: 1 columna
+- Testimonios: scroll horizontal (mostrar 1.5)
+- Header: logo 120px, nav en hamburguesa
+- Tipografía: H1 32px, H2 24px, Body 14px
+- Padding: 16px horizontal
+- Botones: 100% width
+
+PROCESO:
+1. Duplicar frame Home/Tablet
+2. Renombrar: "Home / Mobile"
+3. Set size: 375 × 5500
+4. Ajustar todos los elementos para 1 columna
+5. Cambiar tamaño fuentes (restar 4px)
+6. Full-width buttons
+
+================================================================================
+PASO 5: LLENAR CONTENIDO - HOME ESTRUCTURA COMPLETA
+================================================================================
+
+HERO SECTION:
+- Background: Gradiente rojo Valderrama (#C41E3A → #A01729)
+- Texto (blanco):
+  * H1: "Educación Internacional Bilingüe"
+  * Subtítulo: "Valderrama is thinking critically."
+  * Descripción: "Con pensamiento crítico, personalización real y tecnología humanista"
+- Botones:
+  * Primario: "Agendar Visita"
+  * Secundario: "Aplicar Ahora"
+- Imagen: Placeholder 600×400px (lado derecho, desktop solo)
+
+DIFERENCIADORES (4 TARJETAS):
+Tarjeta 1:
+- Icono: Círculo 48px, azul cielo
+- Título: "Personalización Real"
+- Descripción: "15 estudiantes máximo por salón para atención individual"
+- Color accent: Borde superior Verde
+
+Tarjeta 2:
+- Icono: Círculo 48px, naranja
+- Título: "Learning Center"
+- Descripción: "Apoyo integral y seguimiento especializado en cada nivel"
+- Color accent: Borde naranja
+
+Tarjeta 3:
+- Icono: Círculo 48px, rojo
+- Título: "Pensamiento Crítico"
+- Descripción: "Eje transversal en todas las áreas de estudio"
+- Color accent: Borde rojo
+
+Tarjeta 4:
+- Icono: Círculo 48px, verde
+- Título: "Alimentación Saludable"
+- Descripción: "Nutrición consciente integrada en el día escolar"
+- Color accent: Borde verde
+
+VALDERRAMA IS BANNER (Verde fondo):
+- Fondo: Verde Nature (#2E7D32)
+- Texto: "Valderrama is learning 1 to 1."
+- Descripción: "Mentorías personalizadas para que cada estudiante avance a su ritmo"
+- CTA: Botón blanco "Conoce Nuestro Modelo"
+
+PROGRAMAS (4 TARJETAS):
+Estructura tarjeta:
+- Imagen: 300×200px placeholder
+- Título: "Preescolar (Ages 3-5)"
+- Descripción: "Explorando el mundo con Montessori e IB"
+- Botón: "Más info" (verde pequeño)
+- Badge: "Ages 3-5"
+
+Repetir para: Primaria, Secundaria, Media
+
+TESTIMONIOS CARRUSEL:
+Mostrar 3 testimonios:
+Testimonio 1:
+- Avatar: 80×80px circular, placeholder
+- Nombre: "María García"
+- Rol: "Madre de Estudiante, Primaria"
+- Cita: "En Valderrama vimos la diferencia desde el primer mes. Mi hijo pasó de ansioso a confident."
+- Layout: Centrado vertical
+
+Repetir estructura para 2 más.
+Nav: 3 puntos indicators (dot carousel)
+
+CTA FINAL SECTION (Fondo gris oscuro):
+- Texto: "¿Listo para transformar?"
+- Descripción: "Únete a una comunidad que valida cada estudiante"
+- Botones:
+  * "Agendar Visita" (blanco/rojo hover)
+  * "Solicitar Información" (borde blanco)
+
+FOOTER:
+4 columnas:
+1. Logo + "Educación internacional bilingüe que transforma"
+2. Links: Home | Programas | Admisiones | Contacto | Blog | Padres
+3. Contacto: info@valderramais.com | +57 123 456 7890 | Cartagena, Colombia
+4. Redes: 5 iconos (Facebook, Instagram, LinkedIn, YouTube, WhatsApp)
+
+================================================================================
+PASO 6: CREAR PÁGINAS ADICIONALES (Proceso similar)
+================================================================================
+
+ADMISIONES (Desktop: 1440×3000):
+
+Hero:
+- Fondo: Verde suave
+- H1: "Proceso de Admisión"
+- Subtítulo: "Queremos conocerte. Aquí te mostramos cómo funciona."
+
+Timeline (5 pasos):
+- Paso 1: Solicitud Online (Azul Cielo)
+- Paso 2: Entrevista Académica
+- Paso 3: Evaluaciones
+- Paso 4: Revisión Personalizada
+- Paso 5: Bienvenida
+
+Banner "Valderrama is caring":
+- Naranja accent
+- Quote: "Cada estudiante es único"
+
+FAQ (6-8 acordeones):
+- Preguntas expandibles
+- Color: Gris claro fondo
+
+CTA: "Aplicar Ahora" botón rojo
+
+---
+
+PROGRAMA (PREESCOLAR - repetir para otros):
+Hero: Imagen aula + título + ages
+
+3 Stats boxes:
+- "15 máx por salón"
+- "100% Bilingüe"
+- "Montessori + IB"
+
+"Valderrama is learning 1 to 1" - Rojo banner
+
+4 Áreas desarrollo: Tarjetas con icono
+
+Tabla servicios: Jornada, Comidas, Transporte, Actividades
+
+Galería: 6-8 espacios foto
+
+Testimonios: 2 padres
+
+Costos: Rango de aranceles
+
+CTA: "Agendar Visita" + "Descargar Brochure"
+
+---
+
+COSTOS Y BECAS (Desktop: 1440×3500):
+
+Calculadora interactiva:
+- 5 dropdowns
+- Resultado área (placeholder para cálculo)
+
+Tabla costos:
+- 5 columnas
+- 4 niveles
+
+Descuentos: 3 tarjetas
+
+Becas: 2 opciones (Mérito / Necesidad)
+
+FAQ Financiero
+
+---
+
+CONTACTO (Desktop: 1440×2500):
+
+2 columnas:
+
+COLUMNA 1 - FORMULARIO:
+- Nombre (input)
+- Email (input)
+- Teléfono (input)
+- Nivel interés (dropdown)
+- Mensaje (textarea)
+- Checkbox reCAPTCHA
+- Botón "Enviar" rojo
+
+COLUMNA 2 - INFO:
+- Email, Teléfono, Dirección
+- Mapa placeholder (600×400px)
+- 5 iconos redes sociales
+
+---
+
+BLOG LISTADO (Desktop: 1440×3000):
+
+Filtros: Todos | Noticias | Académico | Comunidad | Nutrición
+
+Grid 3 columnas:
+Tarjeta artículo:
+- Imagen: 300×200px
+- Badge categoría (verde/azul/naranja)
+- Título (2 líneas)
+- Extracto (3 líneas)
+- Autor | Fecha (pequeño)
+- "Leer más" link
+
+6-9 artículos con paginación
+
+Newsletter signup abajo
+
+---
+
+BLOG ARTÍCULO (Desktop: 1440×4000):
+
+Breadcrumb: Home / Blog / Título
+
+Hero: Imagen grande
+
+Metadata: Autor | Fecha | Categoría | Tiempo lectura
+
+Contenido: Párrafos + espacios para fotos
+
+Sidebar (derecha):
+- Artículos relacionados (3 cards pequeñas)
+- Newsletter signup
+- Categorías (lista)
+
+Botones compartir: Facebook | LinkedIn | Copiar
+
+CTA final: "Interesado?" + 2 botones
+
+---
+
+EVENTOS LISTADO (Desktop: 1440×3000):
+
+Calendario grid
+Navegación mes anterior/siguiente
+
+Lista eventos:
+- Tarjetas 5-8
+- Fecha + Hora destacado
+- Título
+- Descripción breve
+- "Detalles" botón
+
+Filtros: Todos | Académicos | Comunitarios | Extracurriculares
+
+---
+
+404 ERROR (Desktop: 1440×800):
+
+Número gigante: "404"
+Título: "Página no encontrada"
+Descripción: "La página que buscas no existe"
+
+Sugerencias de navegación:
+- Botón "Ir a Home" (rojo)
+- Botón "Contactar Soporte" (verde)
+- Links rápidos: Programas | Admisiones | Contacto
+
+================================================================================
+PASO 7: CREAR VERSIONES TABLET Y MOBILE
+================================================================================
+
+Para cada página:
+1. Duplicar frame Desktop
+2. Cambiar size: 768px (tablet)
+3. Ajustar layouts (menos columnas, padding reducido)
+4. Cambiar tipografía (-4px)
+5. Full-width CTAs
+
+6. Duplicar de nuevo
+7. Cambiar size: 375px (mobile)
+8. 1 columna para todo
+9. Tipografía más pequeña
+10. Padding 16px
+
+================================================================================
+PASO 8: CREAR COMPONENTES FIGMA PARA REUTILIZACIÓN
+================================================================================
+
+Archivo B - "Library":
+
+1. COMPONENTES BÁSICOS:
+- Button/Primary (3 variantes: Default, Hover, Disabled)
+- Button/Secondary
+- Button/Small
+- Input/Text (3 variantes: Default, Focus, Error)
+- Card/Basic
+- Card/Program
+- Card/Testimonial
+- Card/ValderramaIs
+- Badge/Categoría
+- Hero/Section
+
+2. COMPONENTES COMPLEJOS:
+- Header/Desktop
+- Header/Mobile
+- Footer/Desktop
+- Footer/Mobile
+- Timeline/Item
+- Accordion/Item (collapsed + expanded)
+- Table/Row (basic + highlight)
+
+3. COMPARTIR LIBRARY:
+- Assets > Publish file as Library
+- En archivo A, agregar esta library
+- Assets > Library > seleccionar componentes
+- Usar drag and drop en frames
+
+================================================================================
+PASO 9: VERIFICACIÓN FINAL
+================================================================================
+
+CHECKLIST ANTES DE ENTREGAR:
+
+□ 9 páginas × 3 dispositivos = 27 frames completos
+□ Todos los componentes con variantes
+□ Colors y typography aplicados desde tokens
+□ Logo en header (versión correcta)
+□ "Valderrama is..." frases en cada página
+□ CTAs coherentes por página
+□ Responsive designs verificados
+□ Nombrado consistentemente (Page / Device)
+□ Capas organizadas por sección
+□ Componentes compartibles marcados
+□ Placeholders de imágenes consistentes
+□ WCAG colores validados visualmente
+
+================================================================================
+HERRAMIENTAS Y RECURSOS FIGMA
+================================================================================
+
+PLUGINS RECOMENDADOS:
+- Unsplash: Para fotos placeholder
+- Iconify: Para iconos educativos
+- Google Sheets Sync: Para actualizar datos desde hoja
+- Content Roulette: Para generar textos Lorem Ipsum variado
+
+ATAJOS ÚTILES:
+- Cmd+K (Mac) / Ctrl+Alt+K (Win): Convertir a componente
+- Cmd+Shift+O: Organizar frame
+- Shift+Drag: Redimensionar proporcional
+- Cmd+D (Mac) / Ctrl+D (Win): Duplicar
+
+================================================================================
+ENTREGABLES AL FINAL SEMANA 2-3
+================================================================================
+
+✓ Archivo Figma "Valderrama IS - Mockups HighFi v1.0"
+✓ 27 frames completos (9 páginas × 3 dispositivos)
+✓ 15+ componentes reutilizables con variantes
+✓ Sistema de diseño (colores, tipografía, espaciado)
+✓ Link compartible para revisión
+✓ Especificaciones de handoff para desarrollo
+
+================================================================================
+FIN DEL DOCUMENTO

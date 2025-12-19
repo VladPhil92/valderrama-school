@@ -1,0 +1,483 @@
+{
+  "site_structure": {
+    "meta": {
+      "total_pages": 73,
+      "date_created": "2025-12-17",
+      "version": "1.0"
+    },
+    "pages": [
+      {
+        "id": 1,
+        "title": "Home",
+        "slug": "home",
+        "parent": null,
+        "template": "page-home.php",
+        "menu_order": 1,
+        "excerpt": "Página de inicio con hero, diferenciadores, modelo educativo y CTAs",
+        "meta": {
+          "hero_title": "Valderrama International School",
+          "hero_subtitle": "Educación bilingüe de excelencia en Cartagena"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Quiénes Somos",
+        "slug": "quienes-somos",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 2,
+        "excerpt": "Presentación institucional, historia, misión, visión y valores",
+        "children": [
+          {
+            "title": "Historia y Fundación",
+            "slug": "historia-fundacion",
+            "template": "page-subsection.php",
+            "excerpt": "Fundación en 2025, respuesta educativa en Colombia, hitos y visión de futuro"
+          },
+          {
+            "title": "Misión, Visión y Valores",
+            "slug": "mision-vision-valores",
+            "template": "page-subsection.php",
+            "excerpt": "Misión: Educación de calidad con cuidado amoroso. Visión: Escuela de referencia. 5 Valores institucionales"
+          },
+          {
+            "title": "Filosofía Institucional",
+            "slug": "filosofia-institucional",
+            "template": "page-subsection.php",
+            "excerpt": "Concepto del ser humano, teoría pedagógica, desarrollo integral y principios humanistas"
+          },
+          {
+            "title": "Principios y Valores",
+            "slug": "principios-valores",
+            "template": "page-subsection.php",
+            "excerpt": "5 Principios institucionales detallados: cómo se manifiestan en la práctica diaria"
+          },
+          {
+            "title": "Identidad Institucional",
+            "slug": "identidad-institucional",
+            "template": "page-subsection.php",
+            "excerpt": "Logo, lema, colores institucionales, tipografía y línea gráfica"
+          },
+          {
+            "title": "Comunidad Educativa",
+            "slug": "comunidad-educativa",
+            "template": "page-subsection.php",
+            "excerpt": "Estructura de la comunidad: estudiantes, docentes, administrativos, padres y espacios de participación"
+          },
+          {
+            "title": "Gobierno Escolar",
+            "slug": "gobierno-escolar",
+            "template": "page-subsection.php",
+            "excerpt": "Consejo Directivo, Académico, de Estudiantes y de Padres. Procesos democráticos"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Modelo Educativo",
+        "slug": "modelo-educativo",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 3,
+        "excerpt": "Enfoque pedagógico innovador: PBL, Service Learning, educación personalizada",
+        "children": [
+          {
+            "title": "Enfoque Pedagógico",
+            "slug": "enfoque-pedagogico",
+            "template": "page-subsection.php",
+            "excerpt": "3 Pilares: Aprendizaje Significativo, Tecnología Consciente, Pensamiento Global"
+          },
+          {
+            "title": "Educación Personalizada",
+            "slug": "educacion-personalizada",
+            "template": "page-subsection.php",
+            "excerpt": "Cada estudiante es único. Atención diferenciada y respeto a ritmos individuales"
+          },
+          {
+            "title": "Metodología Montessori",
+            "slug": "metodologia-montessori",
+            "template": "page-subsection.php",
+            "excerpt": "Principios Montessori aplicados en Preescolar: libertad, responsabilidad y ambiente preparado"
+          },
+          {
+            "title": "Aprendizaje por Proyectos (PBL)",
+            "slug": "aprendizaje-por-proyectos",
+            "template": "page-subsection.php",
+            "excerpt": "Project-Based Learning: integración interdisciplinaria y conexión con vida real"
+          },
+          {
+            "title": "Service Learning",
+            "slug": "service-learning",
+            "template": "page-subsection.php",
+            "excerpt": "Aprendizaje con propósito: proyectos de impacto social y responsabilidad ciudadana"
+          },
+          {
+            "title": "Blended Learning",
+            "slug": "blended-learning",
+            "template": "page-subsection.php",
+            "excerpt": "Integración de tecnología: espacios físicos y virtuales, recursos digitales pedagógicos"
+          },
+          {
+            "title": "Educación Holística",
+            "slug": "educacion-holistica",
+            "template": "page-subsection.php",
+            "excerpt": "Desarrollo integral: dimensiones cognitiva, emocional, social, física y espiritual"
+          },
+          {
+            "title": "Habilidades del Siglo XXI",
+            "slug": "habilidades-siglo-xxi",
+            "template": "page-subsection.php",
+            "excerpt": "Pensamiento crítico, creatividad, comunicación, colaboración, resolución de problemas y liderazgo"
+          },
+          {
+            "title": "Evaluación y Seguimiento",
+            "slug": "evaluacion-seguimiento",
+            "template": "page-subsection.php",
+            "excerpt": "Sistema evaluativo diferenciado, formativo, con reportes de progreso y reuniones de seguimiento"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Academics",
+        "slug": "academics",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 4,
+        "excerpt": "Programa académico completo: Preescolar, Primaria, Media y educación bilingüe",
+        "children": [
+          {
+            "title": "Visión Académica General",
+            "slug": "vision-academica",
+            "template": "page-subsection.php",
+            "excerpt": "Calendario B (Agosto-Junio), niveles educativos, estructura curricular y articulación"
+          },
+          {
+            "title": "Preescolar",
+            "slug": "preescolar",
+            "template": "page-subsection.php",
+            "excerpt": "3-5 años: Montessori, experiencias de aprendizaje, espacios preparados y transición a primaria"
+          },
+          {
+            "title": "Educación Básica Primaria",
+            "slug": "educacion-basica",
+            "template": "page-subsection.php",
+            "excerpt": "Grados 1-5: Currículo por áreas, proyectos interdisciplinarios y competencias por grado"
+          },
+          {
+            "title": "Educación Media",
+            "slug": "educacion-media",
+            "template": "page-subsection.php",
+            "excerpt": "Grados 6-11: Profundización académica, preparación universitaria y proyectos de impacto"
+          },
+          {
+            "title": "Educación Bilingüe",
+            "slug": "educacion-bilingue",
+            "template": "page-subsection.php",
+            "excerpt": "Modelo bilingüe balanceado, certificaciones internacionales (Cambridge, TOEFL) y metodología CLIL"
+          },
+          {
+            "title": "Ciudadanía Global y Multiculturalidad",
+            "slug": "ciudadania-global",
+            "template": "page-subsection.php",
+            "excerpt": "Formación de ciudadanos globales, proyectos internacionales y perspectiva intercultural"
+          },
+          {
+            "title": "Orientación Vocacional",
+            "slug": "orientacion-vocacional",
+            "template": "page-subsection.php",
+            "excerpt": "Programa desde grado 9: talleres, encuentros con profesionales y apoyo a decisiones vocacionales"
+          },
+          {
+            "title": "Preparación para Educación Superior",
+            "slug": "preparacion-educacion-superior",
+            "template": "page-subsection.php",
+            "excerpt": "Diplomas internacionales (US Diploma, IB), preparación SAT/ACT y asesoría universitaria"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Student Life",
+        "slug": "student-life",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 5,
+        "excerpt": "Vida estudiantil integral: bienestar, convivencia, actividades culturales y deportivas",
+        "children": [
+          {
+            "title": "Bienestar Estudiantil",
+            "slug": "bienestar-estudiantil",
+            "template": "page-subsection.php",
+            "excerpt": "Apoyo emocional y psicológico, nutrición, salud y espacios seguros para desarrollo integral"
+          },
+          {
+            "title": "Convivencia Escolar",
+            "slug": "convivencia-escolar",
+            "template": "page-subsection.php",
+            "excerpt": "Principios de convivencia, normas de comportamiento, resolución de conflictos y clima escolar positivo"
+          },
+          {
+            "title": "Sistema Preventivo y Mediación",
+            "slug": "sistema-preventivo",
+            "template": "page-subsection.php",
+            "excerpt": "Modelo preventivo, medidas de acompañamiento, mediación escolar y apoyo a estudiantes"
+          },
+          {
+            "title": "Actividades Culturales y Artísticas",
+            "slug": "actividades-culturales",
+            "template": "page-subsection.php",
+            "excerpt": "Música, danza, artes plásticas, teatro, festivales, presentaciones y excursiones culturales"
+          },
+          {
+            "title": "Actividades Deportivas",
+            "slug": "actividades-deportivas",
+            "template": "page-subsection.php",
+            "excerpt": "Karate, volleyball, educación física, torneos internos, campeonatos escolares y bienestar físico"
+          },
+          {
+            "title": "Proyectos y Salidas Pedagógicas",
+            "slug": "proyectos-salidas",
+            "template": "page-subsection.php",
+            "excerpt": "Salidas de campo, proyectos de investigación, viajes pedagógicos y expediciones nacionales/internacionales"
+          },
+          {
+            "title": "Liderazgo Estudiantil",
+            "slug": "liderazgo-estudiantil",
+            "template": "page-subsection.php",
+            "excerpt": "Gobierno estudiantil, personeros, voceros, comités temáticos y formación en liderazgo"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Learning Center",
+        "slug": "learning-center",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 6,
+        "excerpt": "Centro de aprendizaje complementario: tutorías, refuerzo y programas extracurriculares",
+        "children": [
+          {
+            "title": "Tutorías Académicas",
+            "slug": "tutorias-academicas",
+            "template": "page-subsection.php",
+            "excerpt": "Elementary, Middle, High School: Matemática, Lenguaje, Ciencias, Inglés. Metodología personalizada"
+          },
+          {
+            "title": "Programas de Refuerzo",
+            "slug": "programas-refuerzo",
+            "template": "page-subsection.php",
+            "excerpt": "Dificultades académicas específicas: lectura, comprensión, matemática, lógica y procesos cognitivos"
+          },
+          {
+            "title": "Inclusión y Apoyo Educativo",
+            "slug": "inclusion-apoyo",
+            "template": "page-subsection.php",
+            "excerpt": "Necesidades educativas especiales, diagnósticos, evaluaciones y planes individualizados de apoyo"
+          },
+          {
+            "title": "Escuela de Padres",
+            "slug": "escuela-padres",
+            "template": "page-subsection.php",
+            "excerpt": "Talleres: crianza respetuosa, adolescencia, tecnología en familia y comunicación familia-escuela"
+          },
+          {
+            "title": "Programas Extracurriculares",
+            "slug": "programas-extracurriculares",
+            "template": "page-subsection.php",
+            "excerpt": "Música, artes, deportes, idiomas, robótica y STEM. Horarios flexibles y opciones variadas"
+          },
+          {
+            "title": "Educación Continua",
+            "slug": "educacion-continua",
+            "template": "page-subsection.php",
+            "excerpt": "Programas para adultos, capacitación docente, talleres comunitarios y formación profesional"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Admissions",
+        "slug": "admissions",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 7,
+        "excerpt": "Proceso de admisión: requisitos, costos, visitas y preguntas frecuentes",
+        "children": [
+          {
+            "title": "Proceso de Admisión",
+            "slug": "proceso-admision",
+            "template": "page-subsection.php",
+            "excerpt": "5 pasos: solicitud, evaluación académica, entrevista familiar, decisión y confirmación"
+          },
+          {
+            "title": "Requisitos y Etapas",
+            "slug": "requisitos-etapas",
+            "template": "page-subsection.php",
+            "excerpt": "Documentos por nivel, requisitos de salud y vacunación, políticas de inclusión"
+          },
+          {
+            "title": "Costos y Matrículas",
+            "slug": "costos-matriculas",
+            "template": "page-subsection.php",
+            "excerpt": "Tabla de costos por nivel, formas de pago, becas, planes de financiamiento y descuentos"
+          },
+          {
+            "title": "Agenda tu Visita",
+            "slug": "agenda-visita",
+            "template": "page-subsection.php",
+            "excerpt": "Calendario de visitas, formulario de reserva, tour virtual y conoce nuestras instalaciones"
+          },
+          {
+            "title": "Preguntas Frecuentes",
+            "slug": "preguntas-frecuentes",
+            "template": "page-subsection.php",
+            "excerpt": "FAQs: edad mínima, requisitos de idioma, políticas de retención, transferencias y becas"
+          },
+          {
+            "title": "Contacto Admisiones",
+            "slug": "contacto-admisiones",
+            "template": "page-subsection.php",
+            "excerpt": "Información de contacto, formulario de consulta, email automático, chat y horarios de atención"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Community",
+        "slug": "community",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 8,
+        "excerpt": "Comunidad educativa: padres, participación, proyección social y convenios",
+        "children": [
+          {
+            "title": "Padres de Familia",
+            "slug": "padres-familia",
+            "template": "page-subsection.php",
+            "excerpt": "Rol de padres en la comunidad, participación en actividades y recursos para familias"
+          },
+          {
+            "title": "Consejo de Padres",
+            "slug": "consejo-padres",
+            "template": "page-subsection.php",
+            "excerpt": "Estructura del consejo, integrantes, roles, reuniones, actas e iniciativas"
+          },
+          {
+            "title": "Participación Comunitaria",
+            "slug": "participacion-comunitaria",
+            "template": "page-subsection.php",
+            "excerpt": "Formas de participar: voluntariados, eventos comunitarios y grupos de interés"
+          },
+          {
+            "title": "Proyección Social",
+            "slug": "proyeccion-social",
+            "template": "page-subsection.php",
+            "excerpt": "Programas de impacto social, alianzas comunitarias, Service Learning y responsabilidad"
+          },
+          {
+            "title": "Convenios Institucionales",
+            "slug": "convenios-institucionales",
+            "template": "page-subsection.php",
+            "excerpt": "Alianzas académicas, universidades convenio, instituciones culturales y redes internacionales"
+          },
+          {
+            "title": "Alumni",
+            "slug": "alumni",
+            "template": "page-subsection.php",
+            "excerpt": "Red de graduados, historias de éxito, eventos de alumni y mentoría (a futuro)"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Transparency",
+        "slug": "transparency",
+        "parent": null,
+        "template": "page-section.php",
+        "menu_order": 9,
+        "excerpt": "Transparencia institucional: PEI, manual de convivencia, políticas y documentos oficiales",
+        "children": [
+          {
+            "title": "Proyecto Educativo Institucional (PEI)",
+            "slug": "proyecto-educativo-pei",
+            "template": "page-subsection.php",
+            "excerpt": "Documento completo descargable, resumen ejecutivo, principios fundamentales y metas estratégicas"
+          },
+          {
+            "title": "Manual de Convivencia",
+            "slug": "manual-convivencia",
+            "template": "page-subsection.php",
+            "excerpt": "Normas de conducta, derechos y deberes, régimen disciplinario, procedimientos y PDF descargable"
+          },
+          {
+            "title": "Políticas Institucionales",
+            "slug": "politicas-institucionales",
+            "template": "page-subsection.php",
+            "excerpt": "Política de privacidad, datos, anti-bullying, ambiental y de inclusión"
+          },
+          {
+            "title": "Informes y Comunicados",
+            "slug": "informes-comunicados",
+            "template": "page-subsection.php",
+            "excerpt": "Comunicados institucionales, reportes académicos, evaluaciones internas y noticias importantes"
+          },
+          {
+            "title": "Calendario Académico",
+            "slug": "calendario-academico",
+            "template": "page-subsection.php",
+            "excerpt": "Calendario 2025-2026 descargable, fechas de inicio/cierre, evaluaciones, vacaciones y eventos"
+          },
+          {
+            "title": "Documentos Oficiales",
+            "slug": "documentos-oficiales",
+            "template": "page-subsection.php",
+            "excerpt": "Resoluciones, acuerdos del consejo directivo, estatutos, resoluciones ministeriales y certificaciones"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Contact",
+        "slug": "contact",
+        "parent": null,
+        "template": "page-contact.php",
+        "menu_order": 10,
+        "excerpt": "Contacto: información, ubicación, formulario, horarios y redes sociales",
+        "children": [
+          {
+            "title": "Información de Contacto",
+            "slug": "informacion-contacto",
+            "template": "page-subsection.php",
+            "excerpt": "Teléfono: +57 318 642 8218, Email: admisiones@valderramainternationalschool.com, WhatsApp"
+          },
+          {
+            "title": "Ubicación",
+            "slug": "ubicacion",
+            "template": "page-subsection.php",
+            "excerpt": "Mapa interactivo, Dirección: Cl 5a # 8 - 82, Castillogrande, Cartagena. Cómo llegar y parqueadero"
+          },
+          {
+            "title": "Formulario de Contacto",
+            "slug": "formulario-contacto",
+            "template": "page-subsection.php",
+            "excerpt": "Formulario completo: nombre, email, teléfono, asunto, mensaje y selección de departamento"
+          },
+          {
+            "title": "Horarios de Atención",
+            "slug": "horarios-atencion",
+            "template": "page-subsection.php",
+            "excerpt": "Horarios de oficina, atención a padres, visitas programadas, números de emergencia"
+          },
+          {
+            "title": "Redes Sociales",
+            "slug": "redes-sociales",
+            "template": "page-subsection.php",
+            "excerpt": "Facebook, Instagram, YouTube, WhatsApp Business, LinkedIn y TikTok"
+          }
+        ]
+      }
+    ]
+  }
+}

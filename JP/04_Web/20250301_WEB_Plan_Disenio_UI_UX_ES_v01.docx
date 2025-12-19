@@ -1,0 +1,57 @@
+================================================================================
+PLAN DE DISEÑO UI/UX – VALDERRAMA INTERNATIONAL SCHOOL
+Dominio de publicación: valderramainternationalschool.com
+Versión: 1.0 | Diciembre 2025
+================================================================================
+
+1. OBJETIVO
+Definir el proceso, entregables y criterios de aprobación para diseñar la interfaz y experiencia del sitio web bilingüe (ES/EN) antes del desarrollo en WordPress.
+
+2. ALCANCE
+Incluye: descubrimiento visual, wireframes, mockups alta fidelidad (desktop/móvil), sistema de diseño, prototipo navegable, pruebas con usuarios, handoff. Excluye: desarrollo, integración con plugins y generación de contenido nuevo (ya existe base en ES).
+
+3. CRONOGRAMA (4 SEMANAS)
+Semana 1 (17–23 dic 2025): Descubrimiento + Wireframes low‑fi.
+Semana 2 (24–30 dic 2025): Mockups alta fidelidad (páginas clave).
+Semana 3 (31 dic 2025–6 ene 2026): Sistema de diseño + Prototipo + Test.
+Semana 4 (7–13 ene 2026): Ajustes finales + Handoff a desarrollo.
+Hitos: aprobación al cierre de cada semana.
+
+4. ENTREGABLES
+4.1 Wireframes (low‑fi): Home, Admisiones, Programa por nivel, Costos y Becas, Contacto, Blog listado y artículo, Eventos listado y detalle, Búsqueda, 404.
+4.2 Mockups (hi‑fi): versiones desktop y móvil de lo anterior; header, footer, menú y selector de idioma ES/EN.
+4.3 Sistema de diseño (Figma): tokens de color/tipografía, grid y espaciado, botones, formularios, tarjetas, acordeones, breadcrumbs, paginación, galerías, calendario, componentes hero, listados y FAQs.
+4.4 Prototipo navegable: flujos aplicar, agendar visita, contacto, cambiar idioma, leer programa por nivel.
+4.5 Handoff: especificaciones por plantilla, assets WebP/SVG, guía de accesibilidad y SEO on‑page, mapeo de componentes a Elementor/ACF y plugins.
+
+5. PRINCIPIOS DE DISEÑO
+Mobile‑first; WCAG 2.1 AA; identidad académica, moderna y cercana; claridad de CTAs; consistencia ES/EN; rendimiento percibido (hero optimizado, imágenes adaptativas).
+
+6. PÁGINAS Y PLANTILLAS
+Páginas: Home, Sobre Nosotros, Filosofía, Programas (4), Admisiones, Proceso, Costos y Becas, Vida Estudiantil, Blog listado, Artículo, Eventos, Evento, FAQ, Contacto, Búsqueda, 404, Portales (login).
+Plantillas: Landing, Detalle de programa, Listado/Detalle blog, Listado/Detalle evento, Genérica, Formulario multi‑paso, Galería.
+
+7. ACCESIBILIDAD
+Contraste ≥4.5:1, foco visible, navegación por teclado, targets 44x44px, etiquetas y descripciones en formularios, orden de lectura lógico, alt text planificado.
+
+8. SEO DESDE DISEÑO
+H1 único, jerarquía H2/H3, espacios para metas y OG/Twitter, breadcrumbs, módulos de interlinking, bloque FAQ schema, datos de organización, hero apto para LCP.
+
+9. ARQUITECTURA DE COMPONENTES
+Navegación: header sticky, mega‑menu simple, language switcher, breadcrumb.
+Estructuras: hero, tarjetas de programas, testimonios, listados, acordeones, timelines, tablas simples de costos, calendario, galería.
+Formularios: contacto, info, admisión multi‑paso, becas, tour con selector fecha/hora.
+
+10. PROTOTIPADO Y PRUEBAS
+Prototipo Figma ES/EN. Pruebas con 5 usuarios: encontrar Admisiones, agendar visita, ver costos por nivel, cambiar idioma, leer artículo. Criterio: 80% de éxito <60s/tarea.
+
+11. HANDOFF
+Archivo Figma organizado, estilos y tokens, especificaciones por plantilla, assets optimizados y nomenclatura, guía de estados de UI, mapa a Elementor/ACF.
+
+12. RIESGOS Y MITIGACIÓN
+Fotos propias pendientes (usar placeholders estilizados), vacaciones (fechas duras de aprobación), traducción a EN (liberar ES primero y diseñar contenedores de texto adaptables).
+
+13. CRITERIOS DE APROBACIÓN
+Cobertura de todas las plantillas, AA en accesibilidad, validación de flujos críticos, claridad de CTAs, consistencia de marca, listo para desarrollo.
+
+FIN DEL DOCUMENTO
