@@ -98,7 +98,7 @@ export default async function StudentLifePage({
               </div>
               <div className="relative h-80 bg-gray-200">
                 <Image
-                  src="/images/Patio de Juegos 2.png"
+                  src="/images/Patio-de-Juegos-2.png"
                   alt="Student Life"
                   fill
                   className="object-cover"

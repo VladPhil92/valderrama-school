@@ -20,10 +20,13 @@
         "pbl": "Project-Based Learning",
         "holistic": "Holistic Education",
         "diploma": "Dual Diploma",
-        "calendar": "Calendar B"
+        "calendar": "Calendar B",
+        "tutoring": "Personalized Tutoring",
+        "arts": "Music, Art, Sports"
       },
       "ctaAdmissions": "Admissions Process",
-      "ctaAbout": "Learn More"
+      "ctaAbout": "Learn More",
+      "ctaTutoring": "Tutoring"
     },
     "mission": {
       "label": "Our Mission",
@@ -175,6 +178,48 @@
       "description": "Join our educational community.",
       "button": "Schedule a Visit",
       "contact": "Contact Us"
+    },
+    "essence": {
+      "label": "Valderrama is...",
+      "title": "Quality Education, Loving Care, and Integral Development",
+      "description": "Tutoring Center: Individualized Education for Elementary, Middle & High School"
+    },
+    "founded": {
+      "title": "Founded in 2025",
+      "text1": "Valderrama International School was born as a response to the need for contemporary, integral, and deeply human education in Colombia. We are an internationally-oriented school that conceives education as a transformative process.",
+      "text2": "We firmly believe that each student is unique, with their own talents, rhythms, and potential. We combine the pedagogical tradition of the Montessori method with contemporary methodologies such as Project-Based Learning (PBL), Blended Learning, and Holistic Education."
+    },
+    "approach": {
+      "title": "Our Pedagogical Approach",
+      "description": "We conceive learning as an active, meaningful, and deeply human experience.",
+      "meaningful": {
+        "title": "Meaningful Learning",
+        "description": "We stimulate curiosity, critical thinking, and creativity through interdisciplinary projects."
+      },
+      "technology": {
+        "title": "Conscious Technology",
+        "description": "Conscious use of technology to enhance learning and form informed students."
+      },
+      "global": {
+        "title": "Global Citizenship",
+        "description": "We form conscious citizens, committed to sustainability and respectful of multiculturalism."
+      }
+    },
+    "programs": {
+      "title": "Our Programs",
+      "description": "We offer comprehensive education from preschool through high school.",
+      "preschool": {
+        "title": "Preschool",
+        "description": "Montessori methodology for sensory, motor, and cognitive development."
+      },
+      "elementary": {
+        "title": "Elementary",
+        "description": "Project-based learning with emphasis on bilingualism."
+      },
+      "secondary": {
+        "title": "Secondary & High School",
+        "description": "Academic preparation with international Dual Diploma option."
+      }
     }
   },
   "Footer": {
@@ -185,5 +230,317 @@
     "phone": "+57 318 642 8218",
     "email": "admisiones@vis.edu.co",
     "rights": "All rights reserved."
+  },
+  "AdmissionsPage": {
+    "hero": {
+      "title": "Admissions",
+      "description": "Join our educational community. We guide you through each step of the admissions process."
+    },
+    "process": {
+      "title": "Admissions Process",
+      "steps": {
+        "inquiry": {
+          "title": "Inquiry",
+          "description": "Contact us for information about our programs."
+        },
+        "visit": {
+          "title": "Visit",
+          "description": "Schedule a tour of our facilities."
+        },
+        "application": {
+          "title": "Application",
+          "description": "Submit required documents."
+        },
+        "interview": {
+          "title": "Interview",
+          "description": "Meet with our admissions team."
+        },
+        "decision": {
+          "title": "Decision",
+          "description": "Receive your admission decision."
+        }
+      }
+    },
+    "requirements": {
+      "title": "Requirements",
+      "items": {
+        "documents": {
+          "title": "Documents",
+          "description": "Birth certificate, previous grades, and ID."
+        },
+        "academic": {
+          "title": "Academic Records",
+          "description": "Report cards from last two years."
+        },
+        "interview": {
+          "title": "Family Interview",
+          "description": "Meeting with parents and student."
+        },
+        "health": {
+          "title": "Health Certificate",
+          "description": "Medical and vaccination records."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Start?",
+      "description": "We're here to help you through the admissions process.",
+      "schedule": "Schedule a Visit",
+      "contact": "Contact Us"
+    }
+  },
+  "StudentLifePage": {
+    "hero": {
+      "title": "Student Life",
+      "description": "A vibrant community where students grow, explore, and thrive."
+    },
+    "wellbeing": {
+      "title": "Student Well-being",
+      "description": "We prioritize the holistic development of our students, nurturing their emotional, social, and physical well-being alongside academic excellence."
+    },
+    "activities": {
+      "title": "Activities",
+      "arts": {
+        "title": "Visual Arts",
+        "description": "Painting, sculpture, and creative expression."
+      },
+      "music": {
+        "title": "Music",
+        "description": "Instrumental lessons, choir, and musical ensembles."
+      },
+      "sports": {
+        "title": "Sports",
+        "description": "Soccer, basketball, swimming, and athletics."
+      },
+      "leadership": {
+        "title": "Leadership",
+        "description": "Student government and community service."
+      }
+    },
+    "community": {
+      "title": "School Community",
+      "description": "Our students are part of a supportive community that encourages collaboration and friendship.",
+      "items": {
+        "events": "School events and celebrations",
+        "clubs": "Student clubs and organizations",
+        "service": "Community service projects",
+        "leadership": "Leadership opportunities"
+      }
+    }
+  },
+  "LearningCenterPage": {
+    "hero": {
+      "title": "Learning Center",
+      "description": "Personalized academic support to help every student reach their full potential."
+    },
+    "about": {
+      "title": "Academic Excellence",
+      "description": "Our Learning Center provides individualized tutoring and academic reinforcement for students from elementary through high school, ensuring each student receives the support they need to succeed."
+    },
+    "services": {
+      "title": "Our Services",
+      "tutoring": {
+        "title": "Tutoring",
+        "description": "One-on-one academic support in all subjects."
+      },
+      "reinforcement": {
+        "title": "Reinforcement",
+        "description": "Extra practice and skill development."
+      },
+      "support": {
+        "title": "Learning Support",
+        "description": "Specialized attention for diverse learning needs."
+      },
+      "extracurricular": {
+        "title": "Enrichment",
+        "description": "Advanced programs for accelerated learners."
+      }
+    },
+    "schedule": {
+      "title": "Schedule",
+      "description": "Flexible hours to accommodate student needs.",
+      "afternoon": {
+        "title": "Afternoon",
+        "time": "2:00 PM - 6:00 PM"
+      },
+      "saturday": {
+        "title": "Saturday",
+        "time": "8:00 AM - 12:00 PM"
+      }
+    },
+    "cta": {
+      "title": "Need Academic Support?",
+      "description": "Contact us to learn more about our tutoring services.",
+      "button": "Contact Us"
+    }
+  },
+  "CommunityPage": {
+    "hero": {
+      "title": "Our Community",
+      "description": "Building strong partnerships between families, educators, and the broader community."
+    },
+    "pillars": {
+      "title": "Community Pillars",
+      "parents": {
+        "title": "Parent Engagement",
+        "description": "Active participation in school life and decision-making."
+      },
+      "service": {
+        "title": "Social Service",
+        "description": "Community outreach and social responsibility projects."
+      },
+      "partnerships": {
+        "title": "Partnerships",
+        "description": "Collaborations with local organizations and institutions."
+      },
+      "events": {
+        "title": "Events",
+        "description": "Cultural celebrations and community gatherings."
+      }
+    },
+    "involvement": {
+      "title": "Parent Involvement",
+      "description": "We believe that education is a collaborative effort. Parents are essential partners in their children's educational journey.",
+      "items": {
+        "council": "Parent council and committees",
+        "workshops": "Educational workshops and seminars",
+        "volunteering": "Volunteer opportunities",
+        "communication": "Regular communication and updates"
+      }
+    },
+    "impact": {
+      "title": "Social Impact",
+      "description": "Our school is committed to making a positive difference in the community. Through service-learning projects, students develop empathy, leadership, and a sense of social responsibility."
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "We'd love to hear from you. Reach out with any questions about our programs or admissions."
+    },
+    "info": {
+      "address": {
+        "title": "Address"
+      },
+      "phone": {
+        "title": "+57 318 642 8218"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Hours",
+        "weekdays": "Monday - Friday: 7:00 AM - 4:00 PM",
+        "saturday": "Saturday: 8:00 AM - 12:00 PM"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "About Us",
+      "description": "Valderrama International School is committed to forming integral, autonomous individuals prepared for the challenges of the 21st century."
+    },
+    "mission": {
+      "label": "Our Mission",
+      "text": "To form integral, autonomous, and competent individuals capable of facing the challenges of the 21st century, through quality education that articulates the Montessori methodology with contemporary pedagogies."
+    },
+    "vision": {
+      "label": "Our Vision",
+      "text": "By 2030, Valderrama International School will be recognized as a leading institution in pedagogical innovation in Colombia, distinguished by forming graduates with excellent academic performance and 21st-century skills."
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We pursue quality in all processes and results."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We act with honesty, coherence, and transparency."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We promote creativity and continuous improvement."
+      },
+      "respect": {
+        "title": "Respect",
+        "description": "We value human dignity and diversity."
+      },
+      "responsibility": {
+        "title": "Responsibility",
+        "description": "We assume the consequences of our actions."
+      }
+    },
+    "approach": {
+      "title": "Our Educational Approach",
+      "personalized": {
+        "title": "Personalized Learning",
+        "description": "Each student receives individualized attention according to their rhythms and learning styles."
+      },
+      "pbl": {
+        "title": "Project-Based Learning",
+        "description": "Students learn through real projects that develop critical thinking and creativity."
+      },
+      "service": {
+        "title": "Service Learning",
+        "description": "Education with social impact that develops empathy and citizenship."
+      }
+    },
+    "history": {
+      "title": "Our History",
+      "text": "Founded in 2025, Valderrama International School was born as a response to the need for contemporary, integral, and deeply human education in Cartagena. We combine the pedagogical tradition of the Montessori method with innovative methodologies."
+    }
+  },
+  "ProgramsPage": {
+    "hero": {
+      "title": "Academic Programs",
+      "description": "Comprehensive education from preschool through high school, preparing students for success in an interconnected world."
+    },
+    "levels": {
+      "title": "Academic Levels",
+      "preschool": {
+        "title": "Preschool",
+        "description": "Montessori methodology for sensory, motor, and cognitive development in early childhood."
+      },
+      "elementary": {
+        "title": "Elementary",
+        "description": "Solid academic foundation with emphasis on bilingualism and project-based learning."
+      },
+      "middle": {
+        "title": "Middle School",
+        "description": "Critical thinking development and preparation for advanced studies."
+      },
+      "high": {
+        "title": "High School",
+        "description": "Academic excellence with international Dual Diploma option."
+      }
+    },
+    "bilingual": {
+      "title": "Bilingual Education",
+      "description": "Our bilingual program develops English proficiency from early ages, preparing students for international certifications and global opportunities.",
+      "certifications": {
+        "cambridge": "Cambridge",
+        "toefl": "TOEFL",
+        "clil": "CLIL Methodology"
+      }
+    },
+    "methodology": {
+      "title": "Our Methodology",
+      "montessori": {
+        "title": "Montessori",
+        "description": "Child-centered approach that respects individual learning rhythms."
+      },
+      "pbl": {
+        "title": "Project-Based Learning",
+        "description": "Active methodology that develops critical thinking through real projects."
+      },
+      "blended": {
+        "title": "Blended Learning",
+        "description": "Integration of technology to enhance the learning experience."
+      }
+    }
   }
 }
