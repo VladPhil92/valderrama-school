@@ -2,7 +2,6 @@
   "Navigation": {
     "home": "Inicio",
     "about": "Nuestra Institución",
-    "academics": "Académica",
     "programs": "Programas",
     "admissions": "Admisiones",
     "studentLife": "Vida Estudiantil",
@@ -29,62 +28,162 @@
     "mission": {
       "label": "Nuestra Misión",
       "title": "Educación Integral y Transformadora",
-      "text": "Valderrama International School es una institución educativa que forma personas íntegras, autónomas y competentes, capaces de enfrentar los desafíos del siglo XXI. Proporcionamos educación de calidad que articula la metodología Montessori con pedagogías contemporáneas (Aprendizaje Basado en Proyectos, Blended Learning, Educación Holística), desarrollando habilidades de pensamiento crítico, creatividad y ciudadanía global."
+      "text": "Valderrama International School es una institución educativa que forma personas íntegras, autónomas y competentes, capaces de enfrentar los desafíos del siglo XXI. Proporcionamos educación de calidad que articula la metodología Montessori con pedagogías contemporáneas, desarrollando habilidades de pensamiento crítico, creatividad y ciudadanía global."
     },
     "vision": {
       "label": "Nuestra Visión",
       "title": "Líderes en Innovación Pedagógica",
-      "text": "Para 2030, Valderrama International School será reconocida como una institución líder en innovación pedagógica en Colombia, destacada por formar egresados con excelente desempeño académico y habilidades del siglo XXI, implementar prácticas educativas sostenibles que integren tecnología, medio ambiente y responsabilidad social, y mantener altos estándares de calidad acreditados internacionalmente."
+      "text": "Para 2030, Valderrama International School será reconocida como una institución líder en innovación pedagógica en Colombia, destacada por formar egresados con excelente desempeño académico y habilidades del siglo XXI."
     },
     "values": {
       "label": "Nuestros Valores",
       "title": "Los Valores que Nos Definen",
       "integrity": {
         "title": "Integridad",
-        "description": "Actuamos con honestidad, coherencia y transparencia en todas nuestras acciones."
+        "description": "Actuamos con honestidad, coherencia y transparencia."
       },
       "excellence": {
         "title": "Excelencia",
-        "description": "Perseguimos la calidad en procesos, resultados y relaciones interpersonales."
+        "description": "Perseguimos la calidad en procesos y resultados."
       },
       "respect": {
         "title": "Respeto",
-        "description": "Valoramos la dignidad humana, la diversidad cultural y el pluralismo de ideas."
+        "description": "Valoramos la dignidad humana y la diversidad."
       },
       "responsibility": {
         "title": "Responsabilidad",
-        "description": "Asumimos las consecuencias de nuestras acciones y contribuimos al bien común."
+        "description": "Asumimos las consecuencias de nuestras acciones."
       },
       "solidarity": {
         "title": "Solidaridad",
-        "description": "Trabajamos colaborativamente en función del bienestar de la comunidad educativa."
+        "description": "Trabajamos colaborativamente por el bienestar común."
       },
       "innovation": {
         "title": "Innovación",
-        "description": "Promovemos la creatividad, el pensamiento divergente y la actualización continua."
+        "description": "Promovemos la creatividad y actualización continua."
+      },
+      "pbl": {
+        "title": "Aprendizaje por Proyectos",
+        "description": "Metodología activa centrada en problemas reales."
+      },
+      "serviceLearning": {
+        "title": "Aprendizaje-Servicio",
+        "description": "Formación con impacto social y comunitario."
+      },
+      "tutoring": {
+        "title": "Tutorías Personalizadas",
+        "description": "Acompañamiento individual para cada estudiante."
+      },
+      "bilingual": {
+        "title": "Educación Bilingüe",
+        "description": "Dominio del inglés como segunda lengua."
+      },
+      "diploma": {
+        "title": "Dual Diploma",
+        "description": "Certificación internacional reconocida."
+      },
+      "arts": {
+        "title": "Artes y Cultura",
+        "description": "Desarrollo artístico y expresión creativa."
       }
     },
     "facilities": {
       "label": "Nuestras Instalaciones",
       "title": "Espacios Diseñados para el Aprendizaje",
-      "description": "Contamos con instalaciones modernas y especializadas que promueven el desarrollo integral de nuestros estudiantes."
+      "description": "Instalaciones modernas que promueven el desarrollo integral.",
+      "reception": "Recepción",
+      "playground": "Patio de Juegos",
+      "music": "Salón de Música",
+      "dance": "Salón de Danza",
+      "tutoring": "Salón de Tutorías",
+      "cafeteria": "Cafetería"
+    },
+    "tutoring": {
+      "title": "Centro de Tutorías",
+      "description": "Educación individualizada para Elementary, Middle & High School",
+      "cta": "Más Información",
+      "elementary": {
+        "title": "Elementary School",
+        "subjects": {
+          "math": "Matemáticas",
+          "reading": "Lectura y Escritura",
+          "science": "Ciencias Naturales",
+          "english": "Inglés",
+          "social": "Ciencias Sociales",
+          "art": "Arte y Música"
+        }
+      },
+      "middle": {
+        "title": "Middle School",
+        "subjects": {
+          "algebra": "Álgebra",
+          "geometry": "Geometría",
+          "biology": "Biología",
+          "chemistry": "Química",
+          "physics": "Física",
+          "history": "Historia",
+          "english": "Inglés Avanzado",
+          "literature": "Literatura"
+        }
+      },
+      "high": {
+        "title": "High School",
+        "subjects": {
+          "calculus": "Cálculo",
+          "advChem": "Química Avanzada",
+          "advPhysics": "Física Avanzada",
+          "apBio": "Biología AP",
+          "literature": "Literatura",
+          "worldHistory": "Historia Universal",
+          "satPrep": "Preparación SAT",
+          "ibPrep": "Preparación IB"
+        }
+      }
+    },
+    "extracurricular": {
+      "title": "Actividades Extracurriculares",
+      "music": {
+        "title": "Música",
+        "description": "Piano, guitarra, canto y ensambles musicales."
+      },
+      "art": {
+        "title": "Artes Plásticas",
+        "description": "Pintura, escultura y expresión artística."
+      },
+      "sports": {
+        "title": "Deportes",
+        "description": "Fútbol, baloncesto, natación y más."
+      }
+    },
+    "diplomas": {
+      "title": "Programas de Diploma",
+      "us": {
+        "title": "Diploma USA",
+        "description": "Certificación de High School estadounidense."
+      },
+      "ib": {
+        "title": "Bachillerato Internacional",
+        "description": "Programa IB reconocido mundialmente."
+      },
+      "calendar": {
+        "title": "Calendario B",
+        "description": "Año escolar agosto-junio."
+      }
     },
     "cta": {
       "title": "¿Listo para Comenzar?",
-      "description": "Únete a nuestra comunidad educativa y descubre cómo podemos ayudar a tu hijo a alcanzar su máximo potencial.",
-      "button": "Agendar Visita"
+      "description": "Únete a nuestra comunidad educativa.",
+      "button": "Agendar Visita",
+      "contact": "Contáctanos"
     }
   },
   "Footer": {
     "tagline": "Colegio Bilingüe + Learning Center",
     "quickLinks": "Enlaces Rápidos",
     "contact": "Contacto",
-    "address": "Cl 5a # 8 - 82, Castillogrande, Cartagena, Colombia",
+    "address": "Cl 5a # 8 - 82, Castillogrande, Cartagena",
     "phone": "+57 318 642 8218",
     "email": "admisiones@vis.edu.co",
-    "followUs": "Síguenos",
-    "rights": "Todos los derechos reservados.",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio"
+    "rights": "Todos los derechos reservados."
   }
 }

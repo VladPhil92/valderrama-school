@@ -2,7 +2,6 @@
   "Navigation": {
     "home": "Home",
     "about": "About Us",
-    "academics": "Academics",
     "programs": "Programs",
     "admissions": "Admissions",
     "studentLife": "Student Life",
@@ -29,62 +28,162 @@
     "mission": {
       "label": "Our Mission",
       "title": "Integral and Transformative Education",
-      "text": "Valderrama International School is an educational institution that forms integral, autonomous, and competent individuals capable of facing the challenges of the 21st century. We provide quality education that articulates the Montessori methodology with contemporary pedagogies (Project-Based Learning, Blended Learning, Holistic Education), developing critical thinking skills, creativity, and global citizenship."
+      "text": "Valderrama International School is an educational institution that forms integral, autonomous, and competent individuals capable of facing the challenges of the 21st century. We provide quality education that articulates the Montessori methodology with contemporary pedagogies, developing critical thinking skills, creativity, and global citizenship."
     },
     "vision": {
       "label": "Our Vision",
       "title": "Leaders in Pedagogical Innovation",
-      "text": "By 2030, Valderrama International School will be recognized as a leading institution in pedagogical innovation in Colombia, distinguished by forming graduates with excellent academic performance and 21st-century skills, implementing sustainable educational practices that integrate technology, environment, and social responsibility, and maintaining internationally accredited high-quality standards."
+      "text": "By 2030, Valderrama International School will be recognized as a leading institution in pedagogical innovation in Colombia, distinguished by forming graduates with excellent academic performance and 21st-century skills."
     },
     "values": {
       "label": "Our Values",
       "title": "The Values That Define Us",
       "integrity": {
         "title": "Integrity",
-        "description": "We act with honesty, coherence, and transparency in all our actions."
+        "description": "We act with honesty, coherence, and transparency."
       },
       "excellence": {
         "title": "Excellence",
-        "description": "We pursue quality in processes, results, and interpersonal relationships."
+        "description": "We pursue quality in processes and results."
       },
       "respect": {
         "title": "Respect",
-        "description": "We value human dignity, cultural diversity, and pluralism of ideas."
+        "description": "We value human dignity and diversity."
       },
       "responsibility": {
         "title": "Responsibility",
-        "description": "We assume the consequences of our actions and contribute to the common good."
+        "description": "We assume the consequences of our actions."
       },
       "solidarity": {
         "title": "Solidarity",
-        "description": "We work collaboratively for the well-being of the educational community."
+        "description": "We work collaboratively for the common good."
       },
       "innovation": {
         "title": "Innovation",
-        "description": "We promote creativity, divergent thinking, and continuous improvement."
+        "description": "We promote creativity and continuous improvement."
+      },
+      "pbl": {
+        "title": "Project-Based Learning",
+        "description": "Active methodology centered on real problems."
+      },
+      "serviceLearning": {
+        "title": "Service Learning",
+        "description": "Education with social and community impact."
+      },
+      "tutoring": {
+        "title": "Personalized Tutoring",
+        "description": "Individual support for each student."
+      },
+      "bilingual": {
+        "title": "Bilingual Education",
+        "description": "English mastery as a second language."
+      },
+      "diploma": {
+        "title": "Dual Diploma",
+        "description": "Internationally recognized certification."
+      },
+      "arts": {
+        "title": "Arts and Culture",
+        "description": "Artistic development and creative expression."
       }
     },
     "facilities": {
       "label": "Our Facilities",
       "title": "Spaces Designed for Learning",
-      "description": "We have modern and specialized facilities that promote the integral development of our students."
+      "description": "Modern facilities that promote integral development.",
+      "reception": "Reception",
+      "playground": "Playground",
+      "music": "Music Room",
+      "dance": "Dance Room",
+      "tutoring": "Tutoring Room",
+      "cafeteria": "Cafeteria"
+    },
+    "tutoring": {
+      "title": "Tutoring Center",
+      "description": "Individualized education for Elementary, Middle & High School",
+      "cta": "More Information",
+      "elementary": {
+        "title": "Elementary School",
+        "subjects": {
+          "math": "Mathematics",
+          "reading": "Reading and Writing",
+          "science": "Natural Sciences",
+          "english": "English",
+          "social": "Social Studies",
+          "art": "Art and Music"
+        }
+      },
+      "middle": {
+        "title": "Middle School",
+        "subjects": {
+          "algebra": "Algebra",
+          "geometry": "Geometry",
+          "biology": "Biology",
+          "chemistry": "Chemistry",
+          "physics": "Physics",
+          "history": "History",
+          "english": "Advanced English",
+          "literature": "Literature"
+        }
+      },
+      "high": {
+        "title": "High School",
+        "subjects": {
+          "calculus": "Calculus",
+          "advChem": "Advanced Chemistry",
+          "advPhysics": "Advanced Physics",
+          "apBio": "AP Biology",
+          "literature": "Literature",
+          "worldHistory": "World History",
+          "satPrep": "SAT Preparation",
+          "ibPrep": "IB Preparation"
+        }
+      }
+    },
+    "extracurricular": {
+      "title": "Extracurricular Activities",
+      "music": {
+        "title": "Music",
+        "description": "Piano, guitar, singing, and musical ensembles."
+      },
+      "art": {
+        "title": "Visual Arts",
+        "description": "Painting, sculpture, and artistic expression."
+      },
+      "sports": {
+        "title": "Sports",
+        "description": "Soccer, basketball, swimming, and more."
+      }
+    },
+    "diplomas": {
+      "title": "Diploma Programs",
+      "us": {
+        "title": "US Diploma",
+        "description": "American High School certification."
+      },
+      "ib": {
+        "title": "International Baccalaureate",
+        "description": "Globally recognized IB program."
+      },
+      "calendar": {
+        "title": "Calendar B",
+        "description": "School year August-June."
+      }
     },
     "cta": {
       "title": "Ready to Get Started?",
-      "description": "Join our educational community and discover how we can help your child reach their full potential.",
-      "button": "Schedule a Visit"
+      "description": "Join our educational community.",
+      "button": "Schedule a Visit",
+      "contact": "Contact Us"
     }
   },
   "Footer": {
     "tagline": "Bilingual School + Learning Center",
     "quickLinks": "Quick Links",
     "contact": "Contact",
-    "address": "Cl 5a # 8 - 82, Castillogrande, Cartagena, Colombia",
+    "address": "Cl 5a # 8 - 82, Castillogrande, Cartagena",
     "phone": "+57 318 642 8218",
     "email": "admisiones@vis.edu.co",
-    "followUs": "Follow Us",
-    "rights": "All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "rights": "All rights reserved."
   }
 }
