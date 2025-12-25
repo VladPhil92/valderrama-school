@@ -4,14 +4,20 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 const nextConfig: NextConfig = {
+  // Optimize for production builds with limited memory
+  output: 'standalone',
+  
+  // Optimize images - reduce sizes to minimize build memory
   images: {
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    formats: ['image/webp'],
+    deviceSizes: [640, 750, 1080, 1200],
+    imageSizes: [16, 32, 48, 64, 96],
     minimumCacheTTL: 60,
-    dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
+  
+  // Improve build performance
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
   },
 };
 
