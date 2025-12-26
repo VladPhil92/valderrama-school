@@ -222,21 +222,22 @@
       }
     }
   },
-    "Footer": {
-      "tagline": "Bilingual School + Learning Center",
-      "navigation": "Navigation",
-      "more": "More",
-      "quickLinks": "Quick Links",
-      "contact": "Contact",
-      "address": "Cl 5a # 8 - 82, Castillogrande, Cartagena",
-      "phone": "+57 318 642 8218",
-      "email": "admisiones@valderramainternationalschool.com",
-      "rights": "All rights reserved."
-    },
+  "Footer": {
+    "tagline": "Bilingual School + Learning Center",
+    "navigation": "Navigation",
+    "more": "More",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Cl 5a # 8 - 82, Castillogrande, Cartagena",
+    "phone": "+57 318 642 8218",
+    "email": "admisiones@valderramainternationalschool.com",
+    "rights": "All rights reserved."
+  },
   "AdmissionsPage": {
     "hero": {
-      "title": "Admissions",
-      "description": "Join our educational community. We guide you through each step of the admissions process."
+      "subtitle": "Begin Your Journey",
+      "title": "Join Our Family",
+      "description": "Discover a nurturing community where every child's potential is celebrated. We're here to guide you through each step of your admissions journey."
     },
     "process": {
       "title": "Admissions Process",

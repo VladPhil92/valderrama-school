@@ -24,6 +24,8 @@
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
 }
 
 /* Respect user preferences for reduced motion */
@@ -46,6 +48,87 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  /* Better text rendering on mobile */
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ========================================
+   MOBILE & TABLET OPTIMIZATIONS
+   ======================================== */
+
+/* Ensure images don't overflow on mobile */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better touch targets - minimum 44x44px for accessibility */
+@media (max-width: 768px) {
+  button,
+  a,
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px;
+  }
+  
+  /* Prevent text from being too small on mobile */
+  body {
+    font-size: 16px;
+  }
+  
+  /* Ensure form inputs are readable */
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Small phone optimizations */
+@media (max-width: 375px) {
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Safe area insets for notched devices (iPhone X+, etc.) */
+@supports (padding: max(0px)) {
+  .container-custom {
+    padding-left: max(1.5rem, env(safe-area-inset-left));
+    padding-right: max(1.5rem, env(safe-area-inset-right));
+  }
+  
+  nav {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}
+
+/* Improve tap highlighting on mobile */
+@media (hover: none) and (pointer: coarse) {
+  a, button {
+    -webkit-tap-highlight-color: rgba(196, 30, 58, 0.2);
+  }
 }
 
 /* Focus accessibility - visible focus rings for keyboard navigation */
@@ -86,6 +169,36 @@ body {
 
 .skip-link:focus {
   top: 0;
+}
+
+/* ========================================
+   FORM STYLES - Mobile Optimized
+   ======================================== */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  /* Prevent iOS zoom on focus */
+  font-size: 16px;
+  /* Better touch experience */
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  /* Ensure full width on mobile */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Larger touch targets for checkboxes and radios on mobile */
+@media (max-width: 768px) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
 }
 
 /* Fluid Typography - responsive font sizes using clamp() */
@@ -175,6 +288,20 @@ a {
   letter-spacing: 0.12em;
   font-size: 0.7rem;
   cursor: pointer;
+  /* Better touch targets for mobile */
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile button adjustments */
+@media (max-width: 640px) {
+  .btn {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    font-size: 0.75rem;
+  }
 }
 
 .btn-primary {

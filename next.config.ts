@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 1080, 1200],
     imageSizes: [16, 32, 48, 64, 96],
     minimumCacheTTL: 60,
+    qualities: [75, 90],
   },
   
   // Improve build performance

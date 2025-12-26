@@ -10,6 +10,12 @@ export function generateStaticParams() {
 export const metadata = {
   title: 'Valderrama International School',
   description: 'Colegio Bilingüe + Learning Center',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+  },
 };
 
 export default async function LocaleLayout({
