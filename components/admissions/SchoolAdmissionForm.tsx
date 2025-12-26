@@ -186,12 +186,88 @@ export default function SchoolAdmissionForm({ locale: _locale, onComplete }: Sch
   const handleSubmit = async () => {
     setIsSubmitting(true);
     try {
-      // Here you would send the data to your backend
-      console.log('Form submitted:', formData);
-      await new Promise((resolve) => setTimeout(resolve, 1500)); // Simulate API call
+      // Map form data to API expected format
+      // Split full name into first and last name
+      const fullName = (formData.studentFullName as string) || '';
+      const nameParts = fullName.trim().split(' ');
+      const studentName = nameParts[0] || '';
+      const studentLastName = nameParts.slice(1).join(' ') || '';
+
+      // Map guardian name
+      const guardianFullName = (formData.primaryGuardianName as string) || '';
+      const guardianParts = guardianFullName.trim().split(' ');
+      const parentName = guardianParts[0] || '';
+      const parentLastName = guardianParts.slice(1).join(' ') || '';
+
+      // Build medical conditions from form data
+      const medicalConditions: string[] = [];
+      if (formData.hasMedicalCondition === 'yes' && formData.medicalConditionDetails) {
+        medicalConditions.push(formData.medicalConditionDetails as string);
+      }
+      if (formData.hasAllergies === 'yes' && formData.allergyDetails) {
+        medicalConditions.push(`Allergies: ${formData.allergyDetails}`);
+      }
+      if (formData.requiresMedication === 'yes' && formData.medicationDetails) {
+        medicalConditions.push(`Medication: ${formData.medicationDetails}`);
+      }
+
+      // Build special needs from therapy and development info
+      const specialNeeds: string[] = [];
+      if (formData.hasTherapySupport === 'yes' && formData.therapyDetails) {
+        specialNeeds.push(`Therapy: ${formData.therapyDetails}`);
+      }
+      if (formData.hasDevelopmentCondition === 'yes' && formData.developmentDetails) {
+        specialNeeds.push(`Development: ${formData.developmentDetails}`);
+      }
+
+      // Prepare API payload
+      const apiData = {
+        studentName,
+        studentLastName,
+        studentDocument: (formData.studentDocumentNumber as string) || '',
+        studentBirthDate: (formData.studentBirthDate as string) || '',
+        studentGrade: (formData.aspiringLevel as string) || '',
+        parentName,
+        parentLastName,
+        parentDocument: (formData.primaryGuardianDocument as string) || '',
+        parentEmail: (formData.primaryGuardianEmail as string) || '',
+        parentPhone: (formData.primaryGuardianPhone as string) || '',
+        parentAddress: (formData.primaryGuardianAddress as string) || '',
+        parentCity: '', // Not collected in form, could be extracted from address
+        previousSchool: formData.hasPreviousEducation === 'yes' 
+          ? (formData.previousInstitutionName as string) || '' 
+          : '',
+        medicalConditions: medicalConditions.join('; ') || undefined,
+        specialNeeds: specialNeeds.join('; ') || undefined,
+        howDidYouHear: (formData.whyThisSchool as string) || '',
+        message: (formData.expectations as string) || '',
+      };
+
+      console.log('Submitting admission to API:', apiData);
+
+      const response = await fetch('/api/admissions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(apiData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to submit admission');
+      }
+
+      const result = await response.json();
+      console.log('Admission submitted successfully:', result);
+      
       onComplete?.(formData);
     } catch (error) {
       console.error('Submission error:', error);
+      setErrors((prev) => ({
+        ...prev,
+        submit: error instanceof Error ? error.message : 'Error submitting form',
+      }));
     } finally {
       setIsSubmitting(false);
     }

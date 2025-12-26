@@ -1,11 +1,12 @@
 import { Resend } from 'resend';
+import schoolConfig from '@/config/school.json';
 
 // Initialize Resend only if API key is available
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
-const ADMIN_EMAIL = 'iejpvalderrama@gmail.com';
-const FROM_EMAIL = 'admissions@valderramainternationalschool.com';
-const SCHOOL_NAME = 'Valderrama International School';
+const ADMIN_EMAIL = schoolConfig.contact.email.admissions;
+const FROM_EMAIL = schoolConfig.contact.email.admissions;
+const SCHOOL_NAME = schoolConfig.name;
 
 interface AdmissionData {
   id: string;

@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import { MapPin, Mail, Clock } from 'lucide-react';
 import { locales } from '@/i18n/request';
+import schoolConfig from '@/config/school.json';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -50,7 +51,7 @@ export default async function ContactPage({
               </div>
               <div className="text-center p-8">
                 <a 
-                  href="https://wa.me/573186428218" 
+                  href={schoolConfig.social.whatsappLink}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block hover:opacity-70 transition-opacity mb-4"
@@ -64,7 +65,7 @@ export default async function ContactPage({
                 </h3>
                 <p className="text-gray-500 text-sm font-light" style={{ textAlign: 'center' }}>
                   <a 
-                    href="https://wa.me/573186428218" 
+                    href={schoolConfig.social.whatsappLink}
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-[#C41E3A] transition-colors"
@@ -79,8 +80,8 @@ export default async function ContactPage({
                                 {t('info.email.title')}
                               </h3>
                               <p className="text-gray-500 text-sm font-light break-all" style={{ textAlign: 'center' }}>
-                                <a href="mailto:admisiones@valderramainternationalschool.com" className="hover:text-[#C41E3A] transition-colors">
-                                  admisiones@valderramainternationalschool.com
+                                <a href={`mailto:${schoolConfig.contact.email.admissions}`} className="hover:text-[#C41E3A] transition-colors">
+                                  {schoolConfig.contact.email.admissions}
                                 </a>
                               </p>
                             </div>
@@ -105,7 +106,7 @@ export default async function ContactPage({
               {t('form.title')}
             </h2>
             <p className="text-center text-gray-500 text-sm mb-12" style={{ textAlign: 'center' }}>
-                          admisiones@valderramainternationalschool.com
+                          {schoolConfig.contact.email.admissions}
                         </p>
                         <ContactForm />
           </div>

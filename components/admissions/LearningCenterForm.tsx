@@ -201,7 +201,7 @@ export function LearningCenterAdmissionForm() {
                      currentStep === STEPS_PER_SECTION[currentSectionId] - 1;
 
   // Submit handler
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const formData = {
       formType: 'learning-center' as const,
       studentData,
@@ -212,8 +212,93 @@ export function LearningCenterAdmissionForm() {
       observations,
       consents,
     };
-    console.log('Submitting form:', formData);
-    // Handle submission
+    console.log('Submitting Learning Center form:', formData);
+    
+    try {
+      // Split full name into first and last name
+      const nameParts = studentData.fullName.trim().split(' ');
+      const studentName = nameParts[0] || '';
+      const studentLastName = nameParts.slice(1).join(' ') || '';
+
+      // Split guardian name
+      const guardianParts = studentData.guardianName.trim().split(' ');
+      const parentName = guardianParts[0] || '';
+      const parentLastName = guardianParts.slice(1).join(' ') || '';
+
+      // Build medical conditions from health info
+      const medicalConditions: string[] = [];
+      if (healthInfo.hasMedicalCondition === 'yes' && healthInfo.medicalConditionDetails) {
+        medicalConditions.push(healthInfo.medicalConditionDetails);
+      }
+      if (healthInfo.hasAllergies === 'yes' && healthInfo.allergyDetails) {
+        medicalConditions.push(`Allergies: ${healthInfo.allergyDetails}`);
+      }
+      if (healthInfo.requiresMedication === 'yes' && healthInfo.medicationDetails) {
+        medicalConditions.push(`Medication: ${healthInfo.medicationDetails}`);
+      }
+
+      // Build special needs
+      const specialNeeds: string[] = [];
+      if (healthInfo.hasPhysicalLimitation === 'yes' && healthInfo.physicalLimitationDetails) {
+        specialNeeds.push(`Physical Limitation: ${healthInfo.physicalLimitationDetails}`);
+      }
+      if (healthInfo.instructorNotes) {
+        specialNeeds.push(`Instructor Notes: ${healthInfo.instructorNotes}`);
+      }
+
+      // Get selected service details
+      const selectedService = serviceSelection.serviceType;
+      const serviceDetails = {
+        tutoring: 'Academic Tutoring',
+        languages: `Languages: ${(serviceSelection.languageOptions || []).join(', ')}`,
+        music: `Music: ${(serviceSelection.musicOptions || []).join(', ')}`,
+        art: `Art: ${(serviceSelection.artOptions || []).join(', ')}`,
+        sports: `Sports: ${(serviceSelection.sportsOptions || []).join(', ')}`,
+      };
+
+      // Prepare API payload
+      const apiData = {
+        studentName,
+        studentLastName,
+        studentDocument: studentData.documentId || '',
+        studentBirthDate: '', // Not collected, using age instead
+        studentGrade: `Learning Center - ${serviceDetails[selectedService] || selectedService}`,
+        parentName,
+        parentLastName,
+        parentDocument: '', // Not collected in learning center form
+        parentEmail: studentData.email,
+        parentPhone: studentData.phone,
+        parentAddress: '', // Not collected
+        parentCity: '',
+        previousSchool: experience.hasPreviousExperience === 'yes' ? experience.previousInstitution : '',
+        medicalConditions: medicalConditions.join('; ') || undefined,
+        specialNeeds: specialNeeds.join('; ') || undefined,
+        howDidYouHear: objectives.goals || '',
+        message: `${objectives.specificObjective || ''}\n\nStudent Age: ${studentData.age}\n${observations.additionalInfo || ''}`.trim(),
+      };
+
+      const response = await fetch('/api/admissions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(apiData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to submit admission');
+      }
+
+      const result = await response.json();
+      console.log('Learning Center admission submitted successfully:', result);
+      
+      // Handle successful submission (could show success message, redirect, etc.)
+      alert('Application submitted successfully!');
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert(error instanceof Error ? error.message : 'Error submitting application');
+    }
   };
 
   // Render the current step

@@ -61,31 +61,40 @@ export default async function LearningCenterPage({
       <main className="min-h-screen bg-white">
         
         {/* Hero Banner */}
-        <section className="relative h-[40vh] md:h-[50vh] overflow-hidden">
+        <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
           <Image
             src="/images/learningcenterkinder.jpeg"
             alt="Learning Center at Valderrama International School"
             fill
-            className="object-cover"
+            className="object-cover scale-105"
             priority
             quality={90}
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/60" />
+          {/* Gradient overlay for depth */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1F2A44]/40 to-transparent" />
+          
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center px-4">
+            <div className="text-center px-6 max-w-4xl">
+              {/* Decorative line */}
+              <div className="w-16 h-0.5 bg-amber-500 mx-auto mb-6" />
+              
               {/* Badge */}
-              <p className="text-xs uppercase tracking-[0.3em] !text-white mb-4 font-bold [text-shadow:_1px_1px_4px_rgb(0_0_0_/_80%)]">
+              <p className="text-sm md:text-base uppercase tracking-[0.25em] font-semibold mb-4 [text-shadow:_1px_1px_4px_rgb(0_0_0_/_50%)]" style={{ color: '#DC2626' }}>
                 {t('intro.badge')}
               </p>
               
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wide !text-white [text-shadow:_2px_2px_8px_rgb(0_0_0_/_80%)]">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight !text-white [text-shadow:_2px_4px_12px_rgb(0_0_0_/_60%)]">
                 {t('hero.title')}
               </h1>
               
-              <p className="text-lg md:text-xl max-w-2xl mx-auto font-semibold leading-relaxed mb-8 !text-white [text-shadow:_1px_1px_6px_rgb(0_0_0_/_80%)]">
+              <p className="text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto font-light leading-relaxed mb-8 !text-white/90 [text-shadow:_1px_1px_8px_rgb(0_0_0_/_60%)]">
                 {t('hero.subtitle')}
               </p>
+              
+              {/* Decorative line */}
+              <div className="w-16 h-0.5 bg-amber-500 mx-auto mb-8" />
               
               {/* Dual CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -108,6 +117,9 @@ export default async function LearningCenterPage({
               </div>
             </div>
           </div>
+          
+          {/* Bottom fade for smooth transition */}
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
         </section>
 
         {/* Introduction Section */}

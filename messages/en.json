@@ -347,7 +347,7 @@
   "LearningCenterPage": {
     "hero": {
       "title": "Learning Center",
-      "subtitle": "Personalized Learning Center",
+      "subtitle": "Where Every Student Discovers Their Full Potential",
       "description": "A space where every student receives the attention they deserve to shine academically. Specialized tutoring, academic reinforcement, and enrichment programs designed to boost success.",
       "cta": {
         "diagnostic": "Schedule a diagnostic class",
@@ -355,7 +355,7 @@
       }
     },
     "intro": {
-      "badge": "Personalized Education",
+      "badge": "Unlock Your Potential",
       "title": "What is the Learning Center?",
       "description1": "The Valderrama International School Learning Center is much more than remedial classes: it's an educational ecosystem where every student finds the support they need to reach their full academic potential.",
       "description2": "Unlike generic tutoring, our center integrates active methodologies, educational technology, and a team of specialized professionals who work in coordination with the school curriculum.",

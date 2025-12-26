@@ -1,0 +1,32 @@
+{
+  "name": "Valderrama International School",
+  "shortName": "Valderrama School",
+  "contact": {
+    "email": {
+      "admissions": "admisiones@valderramainternationalschool.com",
+      "general": "info@valderramainternationalschool.com"
+    },
+    "phone": {
+      "main": "+573186428218",
+      "whatsapp": "+573186428218"
+    },
+    "address": {
+      "street": "",
+      "city": "Soacha",
+      "state": "Cundinamarca",
+      "country": "Colombia",
+      "postalCode": ""
+    }
+  },
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "whatsappLink": "https://wa.me/573186428218"
+  },
+  "hours": {
+    "weekdays": "7:00 AM - 4:00 PM",
+    "saturday": "8:00 AM - 12:00 PM",
+    "sunday": "Closed"
+  }
+}

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
 import { sendAdminNotificationEmail } from '@/lib/email';
+import schoolConfig from '@/config/school.json';
 
 interface AdmissionData {
   studentName: string;
@@ -23,7 +24,7 @@ interface AdmissionData {
 }
 
 async function sendWhatsAppNotification(data: AdmissionData) {
-  const phoneNumber = '+573186428218';
+  const phoneNumber = schoolConfig.contact.phone.whatsapp;
   
   // Format the message
   const message = `🎓 *Nueva Solicitud de Admisión*
