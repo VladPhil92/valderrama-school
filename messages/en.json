@@ -633,6 +633,33 @@
             "credentials": ""
           }
         }
+      },
+      "teachers": {
+        "title": "Our Teachers",
+        "subtitle": "Nuestros Docentes",
+        "description": "Dedicated educators committed to inspiring and nurturing our students",
+        "members": {
+          "yeison": {
+            "name": "Yeison Fortich",
+            "role": "Head of Mathematics and Natural Sciences",
+            "credentials": "Professional Chemist and Science teacher (Chemistry and Physics) with solid scientific and pedagogical training. Graduate of Universidad de Cartagena, with diplomas and studies in programming, educational inclusion, and bioinformatics. Extensive experience in basic and secondary education, research, and university tutoring."
+          },
+          "jhefry": {
+            "name": "Jhefry",
+            "role": "English Teacher",
+            "credentials": "Bachelor's degree in Foreign Languages in progress at Universidad de San Buenaventura, with pedagogical and administrative experience as Assistant Teacher at Colegio de La Salle and English Instructor at SENA. B2 level in English and French, diploma in Teaching Spanish as a Foreign Language, and solid background in bilingual communication, tourism, and international customer service."
+          },
+          "jacobo": {
+            "name": "Jacobo José Valderrama",
+            "role": "Music Teacher",
+            "credentials": "Master's degree in Music from Universidad del Atlántico. Electric guitar specialist. Expertise in popular music, boleros, rock, and jazz."
+          },
+          "juan": {
+            "name": "Juan Sebastián Polanco",
+            "role": "Spanish and Literature Teacher",
+            "credentials": "Social Communicator from Universidad de Cartagena. Experience as academic tutor and Digital Marketing advisor."
+          }
+        }
       }
     },
     "ProgramsPage": {

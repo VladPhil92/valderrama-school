@@ -32,7 +32,7 @@ export default function Footer({ locale }: { locale: string }) {
             >
               <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center p-2">
                 <Image
-                  src="/images/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.webp"
+                  src="/images/shared/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.webp"
                   alt="Valderrama International School"
                   width={70}
                   height={70}

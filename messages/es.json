@@ -633,6 +633,33 @@
             "credentials": ""
           }
         }
+      },
+      "teachers": {
+        "title": "Nuestros Docentes",
+        "subtitle": "Nuestros Docentes",
+        "description": "Educadores dedicados comprometidos con inspirar y nutrir a nuestros estudiantes",
+        "members": {
+          "yeison": {
+            "name": "Yeison Fortich",
+            "role": "Jefe de Área Matemáticas y Ciencias Naturales",
+            "credentials": "Químico profesional y docente de Ciencias (Química y Física) con sólida formación científica y pedagógica. Egresado de la Universidad de Cartagena, con diplomados y estudios en programación, inclusión educativa y bioinformática. Amplia experiencia en educación básica, media, investigación y tutorías universitarias."
+          },
+          "jhefry": {
+            "name": "Jhefry",
+            "role": "Docente de Inglés",
+            "credentials": "Licenciado en Lenguas Extranjeras en proceso de titulación por la Universidad de San Buenaventura, con experiencia pedagógica y administrativa como Docente Auxiliar en el Colegio de La Salle e Instructor de inglés en el SENA. Posee nivel B2 en Inglés y Francés, diplomado en Enseñanza del Español como Lengua Extranjera y sólida trayectoria en comunicación bilingüe, turismo y atención al cliente internacional."
+          },
+          "jacobo": {
+            "name": "Jacobo José Valderrama",
+            "role": "Docente de Música",
+            "credentials": "Maestro en Música de la Universidad del Atlántico. Guitarra eléctrica. Dominio en música popular, boleros, rock y jazz."
+          },
+          "juan": {
+            "name": "Juan Sebastián Polanco",
+            "role": "Docente de Español y Literatura",
+            "credentials": "Comunicador social de la Universidad de Cartagena. Experiencia como tutor académico y asesor de Marketing Digital."
+          }
+        }
       }
     },
     "ProgramsPage": {

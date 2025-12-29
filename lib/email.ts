@@ -1,11 +1,19 @@
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 import schoolConfig from '@/config/school.json';
 
-// Initialize Resend only if API key is available
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+// Initialize Nodemailer transporter for Google Workspace/Gmail
+const transporter = process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD
+  ? nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_APP_PASSWORD,
+      },
+    })
+  : null;
 
-const ADMIN_EMAIL = schoolConfig.contact.email.admissions;
-const FROM_EMAIL = schoolConfig.contact.email.admissions;
+const ADMIN_EMAIL = 'direccion@valderramainternationalschool.com';
+const FROM_EMAIL = process.env.GMAIL_USER || 'direccion@valderramainternationalschool.com';
 const SCHOOL_NAME = schoolConfig.name;
 
 interface AdmissionData {
@@ -62,8 +70,8 @@ function getGradeLabel(grade: string): string {
 }
 
 export async function sendAdminNotificationEmail(data: AdmissionData): Promise<boolean> {
-  if (!resend) {
-    console.warn('Email service not configured (RESEND_API_KEY missing). Skipping admin notification.');
+  if (!transporter) {
+    console.warn('Email service not configured (GMAIL_USER or GMAIL_APP_PASSWORD missing). Skipping admin notification.');
     return false;
   }
 
@@ -236,17 +244,12 @@ export async function sendAdminNotificationEmail(data: AdmissionData): Promise<b
   `;
 
   try {
-    const { error } = await resend.emails.send({
+    await transporter.sendMail({
       from: `${SCHOOL_NAME} <${FROM_EMAIL}>`,
       to: ADMIN_EMAIL,
       subject: `🎓 Nueva Solicitud de Admisión - ${data.studentName} ${data.studentLastName}`,
       html: htmlContent,
     });
-
-    if (error) {
-      console.error('Error sending admin notification email:', error);
-      return false;
-    }
     
     return true;
   } catch (error) {
@@ -260,8 +263,8 @@ export async function sendApprovalEmail(
   studentName: string,
   parentName: string
 ): Promise<boolean> {
-  if (!resend) {
-    console.warn('Email service not configured (RESEND_API_KEY missing). Skipping approval email.');
+  if (!transporter) {
+    console.warn('Email service not configured (GMAIL_USER or GMAIL_APP_PASSWORD missing). Skipping approval email.');
     return false;
   }
 
@@ -344,17 +347,12 @@ export async function sendApprovalEmail(
   `;
 
   try {
-    const { error } = await resend.emails.send({
+    await transporter.sendMail({
       from: `${SCHOOL_NAME} <${FROM_EMAIL}>`,
       to: parentEmail,
       subject: `🎉 ¡Bienvenido/a! Su solicitud de admisión ha sido aprobada - ${SCHOOL_NAME}`,
       html: htmlContent,
     });
-
-    if (error) {
-      console.error('Error sending approval email:', error);
-      return false;
-    }
     
     return true;
   } catch (error) {
@@ -369,8 +367,8 @@ export async function sendDenialEmail(
   parentName: string,
   reason?: string
 ): Promise<boolean> {
-  if (!resend) {
-    console.warn('Email service not configured (RESEND_API_KEY missing). Skipping denial email.');
+  if (!transporter) {
+    console.warn('Email service not configured (GMAIL_USER or GMAIL_APP_PASSWORD missing). Skipping denial email.');
     return false;
   }
 
@@ -454,17 +452,12 @@ export async function sendDenialEmail(
   `;
 
   try {
-    const { error } = await resend.emails.send({
+    await transporter.sendMail({
       from: `${SCHOOL_NAME} <${FROM_EMAIL}>`,
       to: parentEmail,
       subject: `Resultado de su solicitud de admisión - ${SCHOOL_NAME}`,
       html: htmlContent,
     });
-
-    if (error) {
-      console.error('Error sending denial email:', error);
-      return false;
-    }
     
     return true;
   } catch (error) {

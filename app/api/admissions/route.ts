@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
 import { sendAdminNotificationEmail } from '@/lib/email';
-import schoolConfig from '@/config/school.json';
 
 interface AdmissionData {
   studentName: string;
@@ -21,71 +20,6 @@ interface AdmissionData {
   specialNeeds?: string;
   howDidYouHear?: string;
   message?: string;
-}
-
-async function sendWhatsAppNotification(data: AdmissionData) {
-  const phoneNumber = schoolConfig.contact.phone.whatsapp;
-  
-  // Format the message
-  const message = `🎓 *Nueva Solicitud de Admisión*
-
-*Estudiante:*
-Nombre: ${data.studentName} ${data.studentLastName}
-Documento: ${data.studentDocument || 'N/A'}
-Fecha de Nacimiento: ${data.studentBirthDate}
-Grado: ${data.studentGrade}
-
-*Acudiente:*
-Nombre: ${data.parentName} ${data.parentLastName}
-Cédula: ${data.parentDocument}
-Email: ${data.parentEmail}
-Teléfono: ${data.parentPhone}
-Dirección: ${data.parentAddress}, ${data.parentCity}
-
-*Información Adicional:*
-Colegio Anterior: ${data.previousSchool || 'N/A'}
-Condiciones Médicas: ${data.medicalConditions || 'N/A'}
-Necesidades Especiales: ${data.specialNeeds || 'N/A'}
-Cómo nos conoció: ${data.howDidYouHear || 'N/A'}
-
-${data.message ? `*Mensaje:*\n${data.message}` : ''}
-
----
-Fecha de registro: ${new Date().toLocaleString('es-CO', { timeZone: 'America/Bogota' })}`;
-
-  try {
-    // Using WhatsApp Business Cloud API
-    const whatsappApiUrl = `https://graph.facebook.com/v18.0/${process.env.WHATSAPP_PHONE_NUMBER_ID}/messages`;
-    
-    const response = await fetch(whatsappApiUrl, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${process.env.WHATSAPP_ACCESS_TOKEN}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        messaging_product: 'whatsapp',
-        to: phoneNumber.replace('+', ''),
-        type: 'text',
-        text: {
-          preview_url: false,
-          body: message
-        }
-      }),
-    });
-
-    if (!response.ok) {
-      const error = await response.text();
-      console.error('WhatsApp API error:', error);
-      throw new Error('Failed to send WhatsApp notification');
-    }
-
-    return await response.json();
-  } catch (error) {
-    console.error('Error sending WhatsApp notification:', error);
-    // Don't fail the whole request if notification fails
-    return null;
-  }
 }
 
 export async function POST(request: Request) {
@@ -146,11 +80,6 @@ export async function POST(request: Request) {
     if (!emailSent) {
       console.error('Failed to send admin notification email, but admission was saved');
     }
-
-    // Send WhatsApp notification (async, don't wait for it)
-    sendWhatsAppNotification(data).catch(err => 
-      console.error('WhatsApp notification failed:', err)
-    );
 
     return NextResponse.json(
       { 

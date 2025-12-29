@@ -42,7 +42,7 @@ export default async function ProgramsPage({
                       </div>
                       <div className="relative h-80 lg:h-96">
                         <Image
-                          src="/images/Salon-de-Tutorias.webp"
+                          src="/images/learning-center/Salon-de-Tutorias.webp"
                           alt="Classroom"
                           fill
                           className="object-cover rounded-lg"
@@ -83,7 +83,7 @@ export default async function ProgramsPage({
                   <div className="container-custom max-w-3xl text-center">
                     <div className="relative w-32 h-32 mx-auto mb-8">
                       <Image
-                        src="/images/world-flags-globe.webp"
+                        src="/images/programs/world-flags-globe.webp"
                         alt="Multilingual Globe"
                         fill
                         className="object-contain"

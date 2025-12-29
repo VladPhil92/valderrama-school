@@ -33,7 +33,7 @@ export default async function AdmissionsPage({
         {/* Hero Banner */}
         <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
           <Image
-            src="/images/admissions.jpeg"
+            src="/images/admissions/admissions.jpeg"
             alt="Admissions at Valderrama International School"
             fill
             className="object-cover scale-105"

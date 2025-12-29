@@ -18,10 +18,10 @@ export default async function StudentLifePage({
   const t = await getTranslations('StudentLifePage');
 
     const activities = [
-      { key: 'arts', icon: Palette, color: '#6D28D9', image: '/images/Salo-de-arte.webp' },
-      { key: 'music', icon: Music, color: '#C41E3A', image: '/images/Salon-de-Musica.webp' },
-      { key: 'sports', icon: Trophy, color: '#B45309', image: '/images/Patio-de-Juegos-1.webp' },
-      { key: 'leadership', icon: Award, color: '#0F766E', image: '/images/Salon-de-Danza.webp' },
+      { key: 'arts', icon: Palette, color: '#6D28D9', image: '/images/student-life/Salo-de-arte.webp' },
+      { key: 'music', icon: Music, color: '#C41E3A', image: '/images/student-life/Salon-de-Musica.webp' },
+      { key: 'sports', icon: Trophy, color: '#B45309', image: '/images/student-life/Patio-de-Juegos-1.webp' },
+      { key: 'leadership', icon: Award, color: '#0F766E', image: '/images/student-life/Salon-de-Danza.webp' },
     ];
 
   return (
@@ -118,7 +118,7 @@ export default async function StudentLifePage({
               </div>
               <div className="relative h-80 bg-gray-200 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/Patio-de-Juegos-2.webp"
+                  src="/images/student-life/Patio-de-Juegos-2.webp"
                   alt="Student Life"
                   fill
                   className="object-cover"
@@ -135,7 +135,7 @@ export default async function StudentLifePage({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div className="relative h-80 bg-gray-200 rounded-lg overflow-hidden order-2 md:order-1">
                 <Image
-                  src="/images/Cafeteria.webp"
+                  src="/images/facilities/Cafeteria.webp"
                   alt={t('cafeteria.title')}
                   fill
                   className="object-cover"
@@ -174,7 +174,7 @@ export default async function StudentLifePage({
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="relative h-48 rounded-lg overflow-hidden group">
                 <Image
-                  src="/images/Kinder.webp"
+                  src="/images/student-life/Kinder.webp"
                   alt="Kinder"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -183,7 +183,7 @@ export default async function StudentLifePage({
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden group">
                 <Image
-                  src="/images/Prekinder.webp"
+                  src="/images/student-life/Prekinder.webp"
                   alt="Prekinder"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -192,7 +192,7 @@ export default async function StudentLifePage({
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden group">
                 <Image
-                  src="/images/Patio-de-Juegos-1.webp"
+                  src="/images/student-life/Patio-de-Juegos-1.webp"
                   alt="Playground"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -201,7 +201,7 @@ export default async function StudentLifePage({
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden group">
                 <Image
-                  src="/images/Salo-de-arte.webp"
+                  src="/images/student-life/Salo-de-arte.webp"
                   alt="Art Room"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -210,7 +210,7 @@ export default async function StudentLifePage({
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden group">
                 <Image
-                  src="/images/Salon-de-Danza.webp"
+                  src="/images/student-life/Salon-de-Danza.webp"
                   alt="Dance Room"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -219,7 +219,7 @@ export default async function StudentLifePage({
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden group">
                 <Image
-                  src="/images/Salon-de-tutorias-2.webp"
+                  src="/images/learning-center/Salon-de-tutorias-2.webp"
                   alt="Tutoring Room"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

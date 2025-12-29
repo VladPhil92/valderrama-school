@@ -29,7 +29,7 @@ export default async function HomePage({
             {/* Centered Logo */}
             <div className="mb-10">
               <Image
-                src="/images/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.webp"
+                src="/images/shared/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.webp"
                 alt="Valderrama International School"
                 width={280}
                 height={140}
@@ -75,7 +75,7 @@ export default async function HomePage({
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-slate-50 to-[#C41E3A]/5" />
         <div className="hidden md:block absolute right-0 top-0 w-1/3 h-full opacity-10" aria-hidden="true">
           <Image
-            src="/images/Fachada-Colegio.webp"
+            src="/images/facilities/Fachada-Colegio.webp"
             alt=""
             fill
             className="object-cover object-left"
@@ -120,7 +120,7 @@ export default async function HomePage({
           </div>
           <div className="relative h-80 mt-12 rounded overflow-hidden max-w-4xl mx-auto">
             <Image
-              src="/images/Fachada-Colegio.webp"
+              src="/images/facilities/Fachada-Colegio.webp"
               alt="Valderrama International School"
               fill
               className="object-cover img-refined"
@@ -291,37 +291,37 @@ export default async function HomePage({
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 mt-16">
             <div className="group">
               <div className="relative h-64 overflow-hidden rounded mb-4">
-                <Image src="/images/Recepcion.webp" alt="Recepción" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                <Image src="/images/facilities/Recepcion.webp" alt="Recepción" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-slate-600 group-hover:text-[#C41E3A] transition-colors duration-300">{t('facilities.reception')}</h3>
             </div>
             <div className="group">
               <div className="relative h-64 overflow-hidden rounded mb-4">
-                <Image src="/images/Patio-de-Juegos-1.webp" alt="Patio de Juegos" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                <Image src="/images/student-life/Patio-de-Juegos-1.webp" alt="Patio de Juegos" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-slate-600 group-hover:text-[#C41E3A] transition-colors duration-300">{t('facilities.playground')}</h3>
             </div>
             <div className="group">
               <div className="relative h-64 overflow-hidden rounded mb-4">
-                <Image src="/images/Salon-de-Musica.webp" alt="Salón de Música" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                <Image src="/images/student-life/Salon-de-Musica.webp" alt="Salón de Música" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-slate-600 group-hover:text-[#C41E3A] transition-colors duration-300">{t('facilities.music')}</h3>
             </div>
             <div className="group">
               <div className="relative h-64 overflow-hidden rounded mb-4">
-                <Image src="/images/Salon-de-Danza.webp" alt="Salón de Danza" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                <Image src="/images/student-life/Salon-de-Danza.webp" alt="Salón de Danza" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-slate-600 group-hover:text-[#C41E3A] transition-colors duration-300">{t('facilities.dance')}</h3>
             </div>
             <div className="group">
               <div className="relative h-64 overflow-hidden rounded mb-4">
-                <Image src="/images/Salon-de-Tutorias.webp" alt="Salón de Tutorías" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                <Image src="/images/learning-center/Salon-de-Tutorias.webp" alt="Salón de Tutorías" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-slate-600 group-hover:text-[#C41E3A] transition-colors duration-300">{t('facilities.tutoring')}</h3>
             </div>
             <div className="group">
               <div className="relative h-64 overflow-hidden rounded mb-4">
-                <Image src="/images/Cafeteria.webp" alt="Cafetería" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                <Image src="/images/facilities/Cafeteria.webp" alt="Cafetería" fill className="object-cover transition-all duration-500 group-hover:scale-105" loading="lazy" />
               </div>
               <h3 className="text-xs font-medium uppercase tracking-widest text-slate-600 group-hover:text-[#C41E3A] transition-colors duration-300">{t('facilities.cafeteria')}</h3>
             </div>

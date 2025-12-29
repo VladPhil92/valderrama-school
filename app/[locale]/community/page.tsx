@@ -70,7 +70,7 @@ export default async function CommunityPage({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div className="relative h-80 bg-gray-200">
                 <Image
-                  src="/images/Recepcion.webp"
+                  src="/images/facilities/Recepcion.webp"
                   alt="Community"
                   fill
                   className="object-cover"

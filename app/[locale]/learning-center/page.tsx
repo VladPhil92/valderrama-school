@@ -49,10 +49,10 @@ export default async function LearningCenterPage({
   ];
 
   const galleryImages = [
-    { src: '/images/Salon-de-Tutorias.webp', alt: 'Tutoring Room 1' },
-    { src: '/images/Salon-de-tutorias-2.webp', alt: 'Tutoring Room 2' },
-    { src: '/images/Recepcion.webp', alt: 'Reception' },
-    { src: '/images/Fachada-Colegio.webp', alt: 'School Building' },
+    { src: '/images/learning-center/Salon-de-Tutorias.webp', alt: 'Tutoring Room 1' },
+    { src: '/images/learning-center/Salon-de-tutorias-2.webp', alt: 'Tutoring Room 2' },
+    { src: '/images/facilities/Recepcion.webp', alt: 'Reception' },
+    { src: '/images/facilities/Fachada-Colegio.webp', alt: 'School Building' },
   ];
 
   return (
@@ -63,7 +63,7 @@ export default async function LearningCenterPage({
         {/* Hero Banner */}
         <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
           <Image
-            src="/images/learningcenterkinder.jpeg"
+            src="/images/learning-center/learningcenterkinder.jpeg"
             alt="Learning Center at Valderrama International School"
             fill
             className="object-cover scale-105"

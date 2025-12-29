@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { User, Users, Home, BookOpen, Heart, Baby, Sparkles, FileCheck } from 'lucide-react';
 import AdmissionProgressBar from './ProgressBar';
@@ -96,6 +97,8 @@ export default function SchoolAdmissionForm({ locale: _locale, onComplete }: Sch
   const [formData, setFormData] = useState<Record<string, unknown>>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submissionId, setSubmissionId] = useState<string | null>(null);
 
   // Filter steps based on conditions
   const activeSteps = FORM_STEPS.filter((step) => {
@@ -261,6 +264,8 @@ export default function SchoolAdmissionForm({ locale: _locale, onComplete }: Sch
       const result = await response.json();
       console.log('Admission submitted successfully:', result);
       
+      setSubmissionId(result.id);
+      setIsSubmitted(true);
       onComplete?.(formData);
     } catch (error) {
       console.error('Submission error:', error);
@@ -960,6 +965,76 @@ export default function SchoolAdmissionForm({ locale: _locale, onComplete }: Sch
     const section = SCHOOL_SECTIONS.find((s) => s.id === currentSection);
     return section ? `Sección ${section.id}: ${section.label}` : '';
   };
+
+  // Success Screen
+  if (isSubmitted) {
+    return (
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
+          {/* Success Icon */}
+          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          
+          {/* Title */}
+          <h2 className="text-2xl md:text-3xl font-serif text-slate-900 mb-4">
+            ¡Solicitud Enviada Exitosamente!
+          </h2>
+          
+          {/* Message */}
+          <p className="text-slate-600 mb-6 leading-relaxed">
+            Gracias por completar el formulario de admisión. Hemos recibido su solicitud y nuestro equipo 
+            de admisiones se pondrá en contacto con usted pronto.
+          </p>
+          
+          {/* Reference ID */}
+          {submissionId && (
+            <div className="bg-slate-50 rounded-lg p-4 mb-6">
+              <p className="text-sm text-slate-500 mb-1">Número de referencia:</p>
+              <p className="font-mono text-slate-700 text-sm">{submissionId}</p>
+            </div>
+          )}
+          
+          {/* Next Steps */}
+          <div className="bg-[#C41E3A]/5 rounded-lg p-6 mb-8 text-left">
+            <h3 className="font-semibold text-slate-900 mb-3">Próximos pasos:</h3>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li className="flex items-start">
+                <span className="text-[#C41E3A] mr-2">1.</span>
+                Recibirá un correo de confirmación en las próximas horas.
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#C41E3A] mr-2">2.</span>
+                Nuestro equipo revisará su solicitud (2-3 días hábiles).
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#C41E3A] mr-2">3.</span>
+                Le contactaremos para programar una entrevista o visita.
+              </li>
+            </ul>
+          </div>
+          
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/"
+              className="px-6 py-3 bg-[#C41E3A] text-white rounded-lg font-medium hover:bg-[#9B1B30] transition-colors"
+            >
+              Volver al Inicio
+            </Link>
+            <Link
+              href="/en/contact"
+              className="px-6 py-3 bg-slate-100 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition-colors"
+            >
+              Contactar Admisiones
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-2xl mx-auto">

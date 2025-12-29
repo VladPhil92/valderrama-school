@@ -89,7 +89,7 @@ export default function Navigation({ locale }: { locale: string }) {
             >
               <div className="w-11 h-11 rounded-full bg-white p-1 shadow-lg">
                 <Image
-                  src="/images/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.webp"
+                  src="/images/shared/LOGO-VALDERRAMA-INTERNATIONAL-SCHOOL.webp"
                   alt="Valderrama International School"
                   width={40}
                   height={40}

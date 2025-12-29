@@ -1,9 +1,9 @@
 import { getTranslations } from 'next-intl/server';
-
+import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { locales } from '@/i18n/request';
-import { Target, Eye, Users, BookOpen, Heart, GraduationCap, UserCircle } from 'lucide-react';
+import { Target, Eye, Users, BookOpen, Heart, UserCircle } from 'lucide-react';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -131,70 +131,243 @@ export default async function AboutPage({
               </section>
 
               {/* Team Section */}
-              <section className="py-24 bg-gray-50">
+              <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
                 <div className="container-custom">
-                  <div className="text-center mb-16">
-                    <h2 className="text-sm uppercase tracking-[0.3em] mb-4 text-gray-400 font-medium">
+                  {/* Section Header */}
+                  <div className="text-center mb-20">
+                    <span className="inline-block px-4 py-1.5 bg-[#C41E3A]/10 text-[#C41E3A] text-xs uppercase tracking-widest rounded-full mb-6">
                       {t('team.title')}
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">
+                      Leadership Team
                     </h2>
-                    <p className="text-gray-500 font-light text-center">
+                    <p className="text-gray-500 font-light max-w-2xl mx-auto">
                       {t('team.description')}
                     </p>
                   </div>
             
-                  {/* Leadership - Featured */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
-                    {/* Rector */}
-                    <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                      <div className="flex flex-col items-center text-center">
-                        <div className="w-20 h-20 rounded-full bg-[#C41E3A]/10 flex items-center justify-center mb-6">
-                          <GraduationCap className="w-10 h-10 text-[#C41E3A]" strokeWidth={1.5} />
-                        </div>
-                        <h3 className="text-lg font-medium text-black mb-1">
+                  {/* Leadership - Featured Cards */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto mb-16">
+                    
+                    {/* Rector Card */}
+                    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                      {/* Photo Section - Fixed Height */}
+                      <div className="relative h-72 w-full">
+                        <Image
+                          src="/images/admissions/rector.jpeg"
+                          alt="Juan Pablo Valderrama Pino"
+                          fill
+                          className="object-cover object-top"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                      </div>
+                      
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <span className="inline-block px-3 py-1 bg-[#C41E3A] text-white text-xs uppercase tracking-wider rounded-full mb-3">
+                          {t('team.members.rector.role')}
+                        </span>
+                        <h3 className="text-xl font-semibold text-slate-900 mb-3">
                           {t('team.members.rector.name')}
                         </h3>
-                        <p className="text-[#C41E3A] text-sm font-medium uppercase tracking-wider mb-4">
-                          {t('team.members.rector.role')}
-                        </p>
-                        <p className="text-gray-600 text-sm font-light leading-relaxed mb-3 text-center">
+                        <p className="text-gray-600 text-sm leading-relaxed mb-2">
                           {t('team.members.rector.credentials')}
                         </p>
-                        <p className="text-gray-500 text-sm font-light leading-relaxed text-center">
+                        <p className="text-gray-500 text-sm leading-relaxed">
                           {t('team.members.rector.experience')}
                         </p>
                       </div>
                     </div>
 
-                    {/* Director of Admissions */}
-                    <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                      <div className="flex flex-col items-center text-center">
-                        <div className="w-20 h-20 rounded-full bg-[#1F2A44]/10 flex items-center justify-center mb-6">
-                          <UserCircle className="w-10 h-10 text-[#1F2A44]" strokeWidth={1.5} />
-                        </div>
-                        <h3 className="text-lg font-medium text-black mb-1">
+                    {/* Director of Admissions Card */}
+                    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                      {/* Photo Section - Fixed Height */}
+                      <div className="relative h-72 w-full">
+                        <Image
+                          src="/images/admissions/dir_admissiones.jpeg"
+                          alt="María del Rosario Pino Bechara"
+                          fill
+                          className="object-cover object-top"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                      </div>
+                      
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <span className="inline-block px-3 py-1 bg-[#1F2A44] text-white text-xs uppercase tracking-wider rounded-full mb-3">
+                          {t('team.members.admissions.role')}
+                        </span>
+                        <h3 className="text-xl font-semibold text-slate-900 mb-3">
                           {t('team.members.admissions.name')}
                         </h3>
-                        <p className="text-[#1F2A44] text-sm font-medium uppercase tracking-wider mb-4">
-                          {t('team.members.admissions.role')}
-                        </p>
-                        <p className="text-gray-600 text-sm font-light leading-relaxed text-center">
+                        <p className="text-gray-600 text-sm leading-relaxed">
                           {t('team.members.admissions.credentials')}
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Other Team Members */}
+                </div>
+              </section>
+
+              {/* Our Teachers Section */}
+              <section className="py-24 bg-white">
+                <div className="container-custom">
+                  {/* Section Header */}
+                  <div className="text-center mb-20">
+                    <span className="inline-block px-4 py-1.5 bg-[#1F2A44]/10 text-[#1F2A44] text-xs uppercase tracking-widest rounded-full mb-6">
+                      {t('teachers.subtitle')}
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">
+                      {t('teachers.title')}
+                    </h2>
+                    <p className="text-gray-500 font-light max-w-2xl mx-auto">
+                      {t('teachers.description')}
+                    </p>
+                  </div>
+
+                  {/* Teachers Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                    
+                    {/* Yeison Fortich - Math & Science */}
+                    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                      {/* Photo Section - Fixed Height */}
+                      <div className="relative h-72 w-full">
+                        <Image
+                          src="/images/admissions/jey_math.jpeg"
+                          alt={t('teachers.members.yeison.name')}
+                          fill
+                          className="object-cover object-top"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                      </div>
+                      
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <span className="inline-block px-3 py-1 bg-[#2E7D32] text-white text-xs uppercase tracking-wider rounded-full mb-3">
+                          {t('teachers.members.yeison.role')}
+                        </span>
+                        <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                          {t('teachers.members.yeison.name')}
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {t('teachers.members.yeison.credentials')}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Jhefry - English */}
+                    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                      {/* Photo Section - Fixed Height */}
+                      <div className="relative h-72 w-full">
+                        <Image
+                          src="/images/admissions/jhefry_ingles.jpeg"
+                          alt={t('teachers.members.jhefry.name')}
+                          fill
+                          className="object-cover object-top"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                      </div>
+                      
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <span className="inline-block px-3 py-1 bg-[#1565C0] text-white text-xs uppercase tracking-wider rounded-full mb-3">
+                          {t('teachers.members.jhefry.role')}
+                        </span>
+                        <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                          {t('teachers.members.jhefry.name')}
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {t('teachers.members.jhefry.credentials')}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Jacobo José Valderrama - Music */}
+                    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                      {/* Photo Section - Fixed Height */}
+                      <div className="relative h-72 w-full">
+                        <Image
+                          src="/images/admissions/Jacobo_José_Valderrama.jpeg"
+                          alt={t('teachers.members.jacobo.name')}
+                          fill
+                          className="object-cover object-top"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                      </div>
+                      
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <span className="inline-block px-3 py-1 bg-[#7B1FA2] text-white text-xs uppercase tracking-wider rounded-full mb-3">
+                          {t('teachers.members.jacobo.role')}
+                        </span>
+                        <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                          {t('teachers.members.jacobo.name')}
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {t('teachers.members.jacobo.credentials')}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Juan Sebastián Polanco - Spanish & Literature */}
+                    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                      {/* Photo Section - Fixed Height */}
+                      <div className="relative h-72 w-full">
+                        <Image
+                          src="/images/admissions/Juan_Sebastián_Polanco.jpeg"
+                          alt={t('teachers.members.juan.name')}
+                          fill
+                          className="object-cover object-top"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                      </div>
+                      
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <span className="inline-block px-3 py-1 bg-[#D84315] text-white text-xs uppercase tracking-wider rounded-full mb-3">
+                          {t('teachers.members.juan.role')}
+                        </span>
+                        <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                          {t('teachers.members.juan.name')}
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {t('teachers.members.juan.credentials')}
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+
+              {/* Coming Soon - Other Staff Section */}
+              <section className="py-24 bg-gray-50">
+                <div className="container-custom">
+                  {/* Divider */}
+                  <div className="flex items-center justify-center mb-16">
+                    <div className="h-px bg-gray-200 flex-1 max-w-xs"></div>
+                    <span className="px-6 text-gray-400 text-sm uppercase tracking-widest">Coming Soon</span>
+                    <div className="h-px bg-gray-200 flex-1 max-w-xs"></div>
+                  </div>
+
+                  {/* Other Team Members - Placeholder */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                     {['preschool', 'learningCenter', 'hr', 'academic'].map((member) => (
-                      <div key={member} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 text-center">
-                        <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4">
-                          <UserCircle className="w-6 h-6 text-gray-400" strokeWidth={1.5} />
+                      <div key={member} className="bg-white/50 backdrop-blur rounded-xl p-6 border border-gray-100 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center mx-auto mb-4">
+                          <UserCircle className="w-8 h-8 text-gray-400" strokeWidth={1} />
                         </div>
-                        <p className="text-gray-400 text-xs font-medium uppercase tracking-wider mb-1">
+                        <p className="text-[#C41E3A] text-xs font-medium uppercase tracking-wider mb-2">
                           {t(`team.members.${member}.role`)}
                         </p>
-                        <p className="text-gray-500 text-sm font-light text-center">
+                        <p className="text-gray-400 text-sm font-light italic">
                           {t(`team.members.${member}.name`)}
                         </p>
                       </div>
