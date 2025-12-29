@@ -6,11 +6,11 @@ A modern, bilingual (Spanish/English) Next.js website for Valderrama Internation
 
 - 🌍 **Bilingual Support**: Full Spanish and English translations using next-intl
 - 📱 **Responsive Design**: Mobile-first approach with Tailwind CSS
-- 🎓 **Admissions Form**: Complete form with database integration and WhatsApp notifications
+- 🎓 **Admissions Form**: Complete form with database integration and email notifications
 - 🗄️ **Database**: Supabase integration for storing admissions data
-- 📲 **Real-time Notifications**: WhatsApp notifications for new admissions
+- � **Email Notifications**: Google Workspace email notifications for new admissions
 - 🎨 **Modern UI**: Clean, professional design with Lucide icons
-- ⚡ **Fast Performance**: Built with Next.js 15 and Turbopack
+- ⚡ **Fast Performance**: Built with Next.js 16 and Turbopack
 
 ## Pages
 
@@ -25,13 +25,13 @@ A modern, bilingual (Spanish/English) Next.js website for Valderrama Internation
 
 ## Tech Stack
 
-- **Framework**: Next.js 15
+- **Framework**: Next.js 16
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Internationalization**: next-intl
 - **Database**: Supabase (PostgreSQL)
-- **Notifications**: WhatsApp Business Cloud API
+- **Email**: Google Workspace (Gmail SMTP via Nodemailer)
 - **Deployment**: Render
 
 ## Getting Started
@@ -41,7 +41,7 @@ A modern, bilingual (Spanish/English) Next.js website for Valderrama Internation
 - Node.js 20+
 - npm or yarn
 - Supabase account (free)
-- Meta Developer account (for WhatsApp notifications)
+- Google Workspace account (for email notifications)
 
 ### Installation
 
@@ -67,19 +67,22 @@ Edit `.env.local` with your credentials:
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-# WhatsApp (optional)
-WHATSAPP_PHONE_NUMBER_ID=your_phone_number_id
-WHATSAPP_ACCESS_TOKEN=your_access_token
+# Google Workspace Email
+GMAIL_USER=direccion@valderramainternationalschool.com
+GMAIL_APP_PASSWORD=your_16_character_app_password
+
+# Base URL
+NEXT_PUBLIC_BASE_URL=https://www.valderramainternationalschool.com
 ```
 
 4. Set up Supabase database:
    - Create a Supabase project at [supabase.com](https://supabase.com)
    - Run the SQL schema from `supabase/schema.sql` in the SQL Editor
-   - See `SUPABASE_SETUP.md` for detailed instructions
+   - See `documentation/SUPABASE_SETUP.md` for detailed instructions
 
-5. (Optional) Set up WhatsApp notifications:
-   - Follow instructions in `WHATSAPP_SETUP.md`
-   - Without this, forms will still work but won't send notifications
+5. Set up email notifications:
+   - Follow instructions in `documentation/GOOGLE_WORKSPACE_EMAIL_SETUP.md`
+   - Generate a Google App Password for the Gmail account
 
 6. Run the development server:
 ```bash
@@ -99,13 +102,13 @@ The `admissions` table stores form submissions with:
 
 **Security**: Row Level Security (RLS) enabled - public can insert, only authenticated users can read.
 
-## WhatsApp Notifications
+## Email Notifications
 
 When a new admission form is submitted:
 1. Data is saved to Supabase
-2. A WhatsApp message is sent to +57 318 6428218
-3. Message includes all candidate details in Spanish
-4. Timestamp is in Colombia timezone
+2. An email notification is sent to `direccion@valderramainternationalschool.com`
+3. Email includes all applicant details with approve/deny action buttons
+4. Approval/denial emails are sent to parents automatically
 
 ## Deployment
 
@@ -126,8 +129,9 @@ Add these in your Render dashboard:
 ```
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-WHATSAPP_PHONE_NUMBER_ID=your_phone_number_id
-WHATSAPP_ACCESS_TOKEN=your_access_token
+GMAIL_USER=direccion@valderramainternationalschool.com
+GMAIL_APP_PASSWORD=your_app_password
+NEXT_PUBLIC_BASE_URL=https://www.valderramainternationalschool.com
 NODE_VERSION=20
 ```
 
@@ -201,7 +205,7 @@ Place images in `public/images/` and reference them with `/images/filename.png`
 ## Support
 
 For questions or issues:
-- Email: admisiones@valderramainternationalschool.com
+- Email: direccion@valderramainternationalschool.com
 - WhatsApp: +57 318 6428218
 
 ## License
@@ -210,8 +214,13 @@ For questions or issues:
 
 ## Documentation
 
-- [Supabase Setup Guide](SUPABASE_SETUP.md)
-- [WhatsApp Setup Guide](WHATSAPP_SETUP.md)
+All documentation is in the `documentation/` folder:
+
+- [Google Workspace Email Setup](documentation/GOOGLE_WORKSPACE_EMAIL_SETUP.md)
+- [Supabase Setup Guide](documentation/SUPABASE_SETUP.md)
+- [WhatsApp Setup Guide](documentation/WHATSAPP_SETUP.md) *(currently disabled)*
+- [Architecture Overview](documentation/ARCHITECTURE.md)
+- [Deployment Checklist](documentation/DEPLOYMENT_CHECKLIST.md)
 
 ---
 

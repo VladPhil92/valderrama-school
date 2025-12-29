@@ -3,17 +3,18 @@
   "shortName": "Valderrama School",
   "contact": {
     "email": {
-      "admissions": "admisiones@valderramainternationalschool.com",
-      "general": "info@valderramainternationalschool.com"
+      "admissions": "direccion@valderramainternationalschool.com",
+      "general": "direccion@valderramainternationalschool.com"
     },
     "phone": {
       "main": "+573186428218",
       "whatsapp": "+573186428218"
     },
     "address": {
-      "street": "",
-      "city": "Soacha",
-      "state": "Cundinamarca",
+      "street": "Cra. 5a # 8 - 82",
+      "neighborhood": "Castillogrande",
+      "city": "Cartagena",
+      "state": "Bolívar",
       "country": "Colombia",
       "postalCode": ""
     }

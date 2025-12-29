@@ -1,7 +1,15 @@
 # WhatsApp Notification Setup
 
+## ⚠️ Current Status: DISABLED
+
+**As of December 2024, WhatsApp notifications are temporarily disabled.** The phone number needs to be registered with a new Meta Business account. Once set up, the integration can be re-enabled.
+
+Email notifications via Google Workspace are active and working. See `GOOGLE_WORKSPACE_EMAIL_SETUP.md` for details.
+
+---
+
 ## Overview
-The admissions form sends a WhatsApp notification to +57 318 6428218 whenever a new application is submitted.
+The admissions form can send a WhatsApp notification to +57 318 6428218 whenever a new application is submitted.
 
 ## Setup Using WhatsApp Business Cloud API (Free)
 
